@@ -149,7 +149,7 @@ foreach ($ywPool as $yw) {
         ]);
         $loopY += 70;
     }
-    $svgPath = $basePath . '/report/' . date('o', $counter[$yw]['time']);
+    $svgPath = $basePath . '/report/city/' . date('o', $counter[$yw]['time']);
     if(!file_exists($svgPath)) {
         mkdir($svgPath, 0777, true);
     }

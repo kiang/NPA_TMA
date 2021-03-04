@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1626 2300" style="enable-background:new 0 0 1626 2300;" xml:space="preserve">
+	<style type="text/css">
+	.st0{fill:#0C354B;}
+	.st1{fill:#E5A83D;}
+	.st2{font-family:'NotoSansCJKtc-Bold-B5pc-H';}
+	.st3{font-size:66px;}
+	.st4{fill:#E3AA39;}
+	.st5{font-family:'Arial-BoldMT';}
+	.st6{font-size:291.7761px;}
+	.st7{fill:none;stroke:#E3AA39;stroke-miterlimit:10;}
+	.st8{font-family:'NotoSansCJKtc-Light-B5pc-H';}
+	.st9{font-size:88px;}
+	.st10{font-family:'NotoSansCJKtc-Medium-B5pc-H';}
+	.st11{font-size:94px;}
+	.st12{fill:none;stroke:#8AAFC1;stroke-miterlimit:10;}
+	.st13{font-size:60.6493px;}
+	.st14{font-size:106px;}
+	.st15{fill:none;}
+	.st16{font-size:44px;}
+	.st17{letter-spacing:6;}
+	.st18{fill:#FFFFFF;}
+	.st19{letter-spacing:1;}
+	.st20{font-size:68px;}
+</style>
+	<rect class="st0" width="1626" height="2300" />
+	<text transform="matrix(1 0 0 1 94.5001 449.017)" class="st1 st2 st3">新增死亡</text>
+	<g>
+		<text transform="matrix(1 0 0 1 100 698.1412)" class="st4 st5 st6">35</text>
+	</g>
+	<g>
+		<rect x="650" y="385.6" class="st7" width="800" height="336.8" />
+		<g>
+			<text transform="matrix(1 0 0 1 700 519.593)" class="st4 st8 st9">受傷</text>
+			<text transform="matrix(1 0 0 1 1000 521.5084)" class="st4 st10 st11">4838</text>
+			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">3612</text>
+			<text transform="matrix(1 0 0 1 700 649.4965)" class="st4 st8 st9">事故</text>
+		</g>
+	</g>
+	<line class="st12" x1="90" y1="745.5" x2="1536" y2="745.5" />
+	<g>
+		<g>
+			<rect x="200" y="161.1" class="st4" width="400" height="190.4" />
+			<g>
+				<text transform="matrix(1 0 0 1 300 233.9079)" class="st0 st10 st13">累計事故</text>
+				<g>
+					<text transform="matrix(1 0 0 1 210 330.2121)" class="st0 st5 st14">38499</text>
+				</g>
+			</g>
+		</g>
+		<g>
+			<rect x="630" y="161.1" class="st4" width="400" height="190.4" />
+			<g>
+				<text transform="matrix(1 0 0 1 730 233.908)" class="st0 st10 st13">累計死亡</text>
+				<g>
+					<text transform="matrix(1 0 0 1 750 330.2122)" class="st0 st5 st14">214</text>
+				</g>
+			</g>
+		</g>
+		<g>
+			<rect x="1060" y="161.1" class="st4" width="400" height="190.4" />
+			<g>
+				<text transform="matrix(1 0 0 1 1160 233.908)" class="st0 st10 st13">累計受傷</text>
+				<g>
+					<text transform="matrix(1 0 0 1 1070 330.2122)" class="st0 st5 st14">51292</text>
+				</g>
+			</g>
+		</g>
+	</g>
+	<rect x="90.6" y="772.1" class="st15" width="1141.8" height="314.8" />
+	<text transform="matrix(1 0 0 1 90.5591 810.7965)">
+		
+		<tspan x="0" y="0" class="st4 st10 st16 st17">普通重型-機車</tspan>
+		<tspan x="600" y="0" class="st18 st10 st16 st17"> 1923 事故， 14 死亡、 2824 受傷</tspan>
+		
+		<tspan x="0" y="70" class="st4 st10 st16 st17">自用-小客車</tspan>
+		<tspan x="600" y="70" class="st18 st10 st16 st17"> 1029 事故， 13 死亡、 1182 受傷</tspan>
+		
+		<tspan x="0" y="140" class="st4 st10 st16 st17">自用-小貨車</tspan>
+		<tspan x="600" y="140" class="st18 st10 st16 st17"> 211 事故， 3 死亡、 247 受傷</tspan>
+		
+		<tspan x="0" y="210" class="st4 st10 st16 st17">腳踏自行車-慢車</tspan>
+		<tspan x="600" y="210" class="st18 st10 st16 st17"> 81 事故， 1 死亡、 120 受傷</tspan>
+		
+		<tspan x="0" y="280" class="st4 st10 st16 st17">計程車-小客車</tspan>
+		<tspan x="600" y="280" class="st18 st10 st16 st17"> 75 事故， 0 死亡、 85 受傷</tspan>
+		
+		<tspan x="0" y="350" class="st4 st10 st16 st17">行人-人</tspan>
+		<tspan x="600" y="350" class="st18 st10 st16 st17"> 55 事故， 0 死亡、 83 受傷</tspan>
+		
+		<tspan x="0" y="420" class="st4 st10 st16 st17">普通輕型-機車</tspan>
+		<tspan x="600" y="420" class="st18 st10 st16 st17"> 44 事故， 0 死亡、 69 受傷</tspan>
+		
+		<tspan x="0" y="490" class="st4 st10 st16 st17">電動自行車-慢車</tspan>
+		<tspan x="600" y="490" class="st18 st10 st16 st17"> 41 事故， 0 死亡、 56 受傷</tspan>
+		
+		<tspan x="0" y="560" class="st4 st10 st16 st17">租賃車-小客車</tspan>
+		<tspan x="600" y="560" class="st18 st10 st16 st17"> 39 事故， 0 死亡、 47 受傷</tspan>
+		
+		<tspan x="0" y="630" class="st4 st10 st16 st17">自用-大貨車</tspan>
+		<tspan x="600" y="630" class="st18 st10 st16 st17"> 17 事故， 0 死亡、 19 受傷</tspan>
+		
+		<tspan x="0" y="700" class="st4 st10 st16 st17">550C.C.以上-機車</tspan>
+		<tspan x="600" y="700" class="st18 st10 st16 st17"> 12 事故， 0 死亡、 12 受傷</tspan>
+		
+		<tspan x="0" y="770" class="st4 st10 st16 st17">營業用-曳引車</tspan>
+		<tspan x="600" y="770" class="st18 st10 st16 st17"> 11 事故， 3 死亡、 9 受傷</tspan>
+		
+		<tspan x="0" y="840" class="st4 st10 st16 st17">民營公車-大客車</tspan>
+		<tspan x="600" y="840" class="st18 st10 st16 st17"> 11 事故， 0 死亡、 11 受傷</tspan>
+		
+		<tspan x="0" y="910" class="st4 st10 st16 st17">250-550C.C.-機車</tspan>
+		<tspan x="600" y="910" class="st18 st10 st16 st17"> 11 事故， 0 死亡、 12 受傷</tspan>
+		
+		<tspan x="0" y="980" class="st4 st10 st16 st17">營業用-小貨車(含客、貨兩用)</tspan>
+		<tspan x="600" y="980" class="st18 st10 st16 st17"> 10 事故， 1 死亡、 15 受傷</tspan>
+		
+		<tspan x="0" y="1050" class="st4 st10 st16 st17">民營客運-大客車</tspan>
+		<tspan x="600" y="1050" class="st18 st10 st16 st17"> 7 事故， 0 死亡、 7 受傷</tspan>
+		
+		<tspan x="0" y="1120" class="st4 st10 st16 st17">動力機械-其他車</tspan>
+		<tspan x="600" y="1120" class="st18 st10 st16 st17"> 4 事故， 0 死亡、 4 受傷</tspan>
+		
+		<tspan x="0" y="1190" class="st4 st10 st16 st17">電動輔助自行車-慢車</tspan>
+		<tspan x="600" y="1190" class="st18 st10 st16 st17"> 3 事故， 0 死亡、 5 受傷</tspan>
+		
+		<tspan x="0" y="1260" class="st4 st10 st16 st17">其他車-其他車</tspan>
+		<tspan x="600" y="1260" class="st18 st10 st16 st17"> 3 事故， 0 死亡、 4 受傷</tspan>
+		
+		<tspan x="0" y="1330" class="st4 st10 st16 st17">營業用-半聯結車</tspan>
+		<tspan x="600" y="1330" class="st18 st10 st16 st17"> 3 事故， 0 死亡、 4 受傷</tspan>
+		
+		<tspan x="0" y="1400" class="st4 st10 st16 st17">農耕用車-其他車</tspan>
+		<tspan x="600" y="1400" class="st18 st10 st16 st17"> 3 事故， 0 死亡、 3 受傷</tspan>
+		
+		<tspan x="0" y="1470" class="st4 st10 st16 st17">營業用-大貨車</tspan>
+		<tspan x="600" y="1470" class="st18 st10 st16 st17"> 3 事故， 0 死亡、 3 受傷</tspan>
+		
+		<tspan x="0" y="1540" class="st4 st10 st16 st17">其他慢車-慢車</tspan>
+		<tspan x="600" y="1540" class="st18 st10 st16 st17"> 2 事故， 0 死亡、 3 受傷</tspan>
+		
+		<tspan x="0" y="1610" class="st4 st10 st16 st17">公營公車-大客車</tspan>
+		<tspan x="600" y="1610" class="st18 st10 st16 st17"> 2 事故， 0 死亡、 2 受傷</tspan>
+		
+		<tspan x="0" y="1680" class="st4 st10 st16 st17">拼裝車-其他車</tspan>
+		<tspan x="600" y="1680" class="st18 st10 st16 st17"> 2 事故， 0 死亡、 2 受傷</tspan>
+		
+		<tspan x="0" y="1750" class="st4 st10 st16 st17">其他特種車-特種車</tspan>
+		<tspan x="600" y="1750" class="st18 st10 st16 st17"> 2 事故， 0 死亡、 2 受傷</tspan>
+		
+		<tspan x="0" y="1820" class="st4 st10 st16 st17">小型輕型-機車</tspan>
+		<tspan x="600" y="1820" class="st18 st10 st16 st17"> 2 事故， 0 死亡、 2 受傷</tspan>
+		
+		<tspan x="0" y="1890" class="st4 st10 st16 st17">其他人-人</tspan>
+		<tspan x="600" y="1890" class="st18 st10 st16 st17"> 2 事故， 0 死亡、 2 受傷</tspan>
+		
+		<tspan x="0" y="1960" class="st4 st10 st16 st17">乘客-人</tspan>
+		<tspan x="600" y="1960" class="st18 st10 st16 st17"> 1 事故， 0 死亡、 1 受傷</tspan>
+		
+		<tspan x="0" y="2030" class="st4 st10 st16 st17">遊覽車-大客車</tspan>
+		<tspan x="600" y="2030" class="st18 st10 st16 st17"> 1 事故， 0 死亡、 1 受傷</tspan>
+		
+		<tspan x="0" y="2100" class="st4 st10 st16 st17">公營客運-大客車</tspan>
+		<tspan x="600" y="2100" class="st18 st10 st16 st17"> 1 事故， 0 死亡、 1 受傷</tspan>
+		
+		<tspan x="0" y="2170" class="st4 st10 st16 st17">救護車-特種車</tspan>
+		<tspan x="600" y="2170" class="st18 st10 st16 st17"> 1 事故， 0 死亡、 1 受傷</tspan>
+			</text>
+	<text transform="matrix(1 0 0 1 300 119.2712)" class="st18 st8 st20">國內交通事故通報  |  2021-02-08</text>
+</svg>
