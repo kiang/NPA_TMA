@@ -27,7 +27,7 @@
 	<rect class="st0" width="1626" height="2300" />
 	<text transform="matrix(1 0 0 1 94.5001 449.017)" class="st1 st2 st3">新增死亡</text>
 	<g>
-		<text transform="matrix(1 0 0 1 100 698.1412)" class="st4 st5 st6">35</text>
+		<text transform="matrix(1 0 0 1 150 698.1412)" class="st4 st5 st6">35</text>
 	</g>
 	<g>
 		<rect x="650" y="385.6" class="st7" width="800" height="336.8" />
@@ -41,25 +41,25 @@
 	<line class="st12" x1="90" y1="745.5" x2="1536" y2="745.5" />
 	<g>
 		<g>
-			<rect x="200" y="161.1" class="st4" width="400" height="190.4" />
+			<rect x="100" y="161.1" class="st4" width="450" height="190.4" />
 			<g>
-				<text transform="matrix(1 0 0 1 300 233.9079)" class="st0 st10 st13">累計事故</text>
+				<text transform="matrix(1 0 0 1 200 233.9079)" class="st0 st10 st13">累計事故</text>
 				<g>
-					<text transform="matrix(1 0 0 1 210 330.2121)" class="st0 st5 st14">38499</text>
+					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">38499</text>
 				</g>
 			</g>
 		</g>
 		<g>
-			<rect x="630" y="161.1" class="st4" width="400" height="190.4" />
+			<rect x="580" y="161.1" class="st4" width="450" height="190.4" />
 			<g>
-				<text transform="matrix(1 0 0 1 730 233.908)" class="st0 st10 st13">累計死亡</text>
+				<text transform="matrix(1 0 0 1 680 233.908)" class="st0 st10 st13">累計死亡</text>
 				<g>
-					<text transform="matrix(1 0 0 1 750 330.2122)" class="st0 st5 st14">214</text>
+					<text transform="matrix(1 0 0 1 590 330.2122)" class="st0 st5 st14">214</text>
 				</g>
 			</g>
 		</g>
 		<g>
-			<rect x="1060" y="161.1" class="st4" width="400" height="190.4" />
+			<rect x="1060" y="161.1" class="st4" width="450" height="190.4" />
 			<g>
 				<text transform="matrix(1 0 0 1 1160 233.908)" class="st0 st10 st13">累計受傷</text>
 				<g>
@@ -71,65 +71,65 @@
 	<rect x="90.6" y="772.1" class="st15" width="1141.8" height="314.8" />
 	<text transform="matrix(1 0 0 1 90.5591 810.7965)">
 		
-		<tspan x="0" y="0" class="st4 st10 st16 st17">南投縣</tspan>
-		<tspan x="150.6" y="0" class="st18 st10 st16 st17"> 166 事故， 1 死亡、 218 受傷</tspan>
+		<tspan x="0" y="0" class="st4 st10 st16 st17">臺南市</tspan>
+		<tspan x="150.6" y="0" class="st18 st10 st16 st17"> 158 事故， 13 死亡、 191 受傷</tspan>
 		
-		<tspan x="0" y="70" class="st4 st10 st16 st17">嘉義市</tspan>
-		<tspan x="150.6" y="70" class="st18 st10 st16 st17"> 50 事故， 0 死亡、 67 受傷</tspan>
+		<tspan x="0" y="70" class="st4 st10 st16 st17">新北市</tspan>
+		<tspan x="150.6" y="70" class="st18 st10 st16 st17"> 980 事故， 4 死亡、 1350 受傷</tspan>
 		
-		<tspan x="0" y="140" class="st4 st10 st16 st17">嘉義縣</tspan>
-		<tspan x="150.6" y="140" class="st18 st10 st16 st17"> 144 事故， 4 死亡、 200 受傷</tspan>
+		<tspan x="0" y="140" class="st4 st10 st16 st17">高雄市</tspan>
+		<tspan x="150.6" y="140" class="st18 st10 st16 st17"> 20 事故， 4 死亡、 27 受傷</tspan>
 		
-		<tspan x="0" y="210" class="st4 st10 st16 st17">基隆市</tspan>
-		<tspan x="150.6" y="210" class="st18 st10 st16 st17"> 103 事故， 0 死亡、 143 受傷</tspan>
+		<tspan x="0" y="210" class="st4 st10 st16 st17">嘉義縣</tspan>
+		<tspan x="150.6" y="210" class="st18 st10 st16 st17"> 144 事故， 4 死亡、 200 受傷</tspan>
 		
-		<tspan x="0" y="280" class="st4 st10 st16 st17">屏東縣</tspan>
-		<tspan x="150.6" y="280" class="st18 st10 st16 st17"> 189 事故， 0 死亡、 262 受傷</tspan>
+		<tspan x="0" y="280" class="st4 st10 st16 st17">雲林縣</tspan>
+		<tspan x="150.6" y="280" class="st18 st10 st16 st17"> 77 事故， 3 死亡、 108 受傷</tspan>
 		
-		<tspan x="0" y="350" class="st4 st10 st16 st17">彰化縣</tspan>
-		<tspan x="150.6" y="350" class="st18 st10 st16 st17"> 546 事故， 2 死亡、 708 受傷</tspan>
+		<tspan x="0" y="350" class="st4 st10 st16 st17">花蓮縣</tspan>
+		<tspan x="150.6" y="350" class="st18 st10 st16 st17"> 2 事故， 2 死亡、 1 受傷</tspan>
 		
-		<tspan x="0" y="420" class="st4 st10 st16 st17">新北市</tspan>
-		<tspan x="150.6" y="420" class="st18 st10 st16 st17"> 980 事故， 4 死亡、 1350 受傷</tspan>
+		<tspan x="0" y="420" class="st4 st10 st16 st17">苗栗縣</tspan>
+		<tspan x="150.6" y="420" class="st18 st10 st16 st17"> 76 事故， 2 死亡、 96 受傷</tspan>
 		
-		<tspan x="0" y="490" class="st4 st10 st16 st17">新竹市</tspan>
-		<tspan x="150.6" y="490" class="st18 st10 st16 st17"> 90 事故， 0 死亡、 119 受傷</tspan>
+		<tspan x="0" y="490" class="st4 st10 st16 st17">彰化縣</tspan>
+		<tspan x="150.6" y="490" class="st18 st10 st16 st17"> 546 事故， 2 死亡、 708 受傷</tspan>
 		
-		<tspan x="0" y="560" class="st4 st10 st16 st17">新竹縣</tspan>
-		<tspan x="150.6" y="560" class="st18 st10 st16 st17"> 195 事故， 0 死亡、 252 受傷</tspan>
+		<tspan x="0" y="560" class="st4 st10 st16 st17">南投縣</tspan>
+		<tspan x="150.6" y="560" class="st18 st10 st16 st17"> 166 事故， 1 死亡、 218 受傷</tspan>
 		
-		<tspan x="0" y="630" class="st4 st10 st16 st17">桃園市</tspan>
-		<tspan x="150.6" y="630" class="st18 st10 st16 st17"> 161 事故， 0 死亡、 217 受傷</tspan>
+		<tspan x="0" y="630" class="st4 st10 st16 st17">新竹市</tspan>
+		<tspan x="150.6" y="630" class="st18 st10 st16 st17"> 90 事故， 0 死亡、 119 受傷</tspan>
 		
-		<tspan x="0" y="700" class="st4 st10 st16 st17">澎湖縣</tspan>
-		<tspan x="150.6" y="700" class="st18 st10 st16 st17"> 12 事故， 0 死亡、 15 受傷</tspan>
+		<tspan x="0" y="700" class="st4 st10 st16 st17">臺東縣</tspan>
+		<tspan x="150.6" y="700" class="st18 st10 st16 st17"> 28 事故， 0 死亡、 32 受傷</tspan>
 		
-		<tspan x="0" y="770" class="st4 st10 st16 st17">臺中市</tspan>
-		<tspan x="150.6" y="770" class="st18 st10 st16 st17"> 9 事故， 0 死亡、 15 受傷</tspan>
+		<tspan x="0" y="770" class="st4 st10 st16 st17">澎湖縣</tspan>
+		<tspan x="150.6" y="770" class="st18 st10 st16 st17"> 12 事故， 0 死亡、 15 受傷</tspan>
 		
-		<tspan x="0" y="840" class="st4 st10 st16 st17">臺北市</tspan>
-		<tspan x="150.6" y="840" class="st18 st10 st16 st17"> 605 事故， 0 死亡、 816 受傷</tspan>
+		<tspan x="0" y="840" class="st4 st10 st16 st17">臺中市</tspan>
+		<tspan x="150.6" y="840" class="st18 st10 st16 st17"> 9 事故， 0 死亡、 15 受傷</tspan>
 		
-		<tspan x="0" y="910" class="st4 st10 st16 st17">臺南市</tspan>
-		<tspan x="150.6" y="910" class="st18 st10 st16 st17"> 158 事故， 13 死亡、 191 受傷</tspan>
+		<tspan x="0" y="910" class="st4 st10 st16 st17">屏東縣</tspan>
+		<tspan x="150.6" y="910" class="st18 st10 st16 st17"> 189 事故， 0 死亡、 262 受傷</tspan>
 		
-		<tspan x="0" y="980" class="st4 st10 st16 st17">臺東縣</tspan>
-		<tspan x="150.6" y="980" class="st18 st10 st16 st17"> 28 事故， 0 死亡、 32 受傷</tspan>
+		<tspan x="0" y="980" class="st4 st10 st16 st17">桃園市</tspan>
+		<tspan x="150.6" y="980" class="st18 st10 st16 st17"> 161 事故， 0 死亡、 217 受傷</tspan>
 		
-		<tspan x="0" y="1050" class="st4 st10 st16 st17">花蓮縣</tspan>
-		<tspan x="150.6" y="1050" class="st18 st10 st16 st17"> 2 事故， 2 死亡、 1 受傷</tspan>
+		<tspan x="0" y="1050" class="st4 st10 st16 st17">新竹縣</tspan>
+		<tspan x="150.6" y="1050" class="st18 st10 st16 st17"> 195 事故， 0 死亡、 252 受傷</tspan>
 		
-		<tspan x="0" y="1120" class="st4 st10 st16 st17">苗栗縣</tspan>
-		<tspan x="150.6" y="1120" class="st18 st10 st16 st17"> 76 事故， 2 死亡、 96 受傷</tspan>
+		<tspan x="0" y="1120" class="st4 st10 st16 st17">基隆市</tspan>
+		<tspan x="150.6" y="1120" class="st18 st10 st16 st17"> 103 事故， 0 死亡、 143 受傷</tspan>
 		
-		<tspan x="0" y="1190" class="st4 st10 st16 st17">連江縣</tspan>
-		<tspan x="150.6" y="1190" class="st18 st10 st16 st17"> 1 事故， 0 死亡、 1 受傷</tspan>
+		<tspan x="0" y="1190" class="st4 st10 st16 st17">臺北市</tspan>
+		<tspan x="150.6" y="1190" class="st18 st10 st16 st17"> 605 事故， 0 死亡、 816 受傷</tspan>
 		
-		<tspan x="0" y="1260" class="st4 st10 st16 st17">雲林縣</tspan>
-		<tspan x="150.6" y="1260" class="st18 st10 st16 st17"> 77 事故， 3 死亡、 108 受傷</tspan>
+		<tspan x="0" y="1260" class="st4 st10 st16 st17">嘉義市</tspan>
+		<tspan x="150.6" y="1260" class="st18 st10 st16 st17"> 50 事故， 0 死亡、 67 受傷</tspan>
 		
-		<tspan x="0" y="1330" class="st4 st10 st16 st17">高雄市</tspan>
-		<tspan x="150.6" y="1330" class="st18 st10 st16 st17"> 20 事故， 4 死亡、 27 受傷</tspan>
+		<tspan x="0" y="1330" class="st4 st10 st16 st17">連江縣</tspan>
+		<tspan x="150.6" y="1330" class="st18 st10 st16 st17"> 1 事故， 0 死亡、 1 受傷</tspan>
 			</text>
-	<text transform="matrix(1 0 0 1 300 119.2712)" class="st18 st8 st20">國內交通事故通報  |  2021-02-08</text>
+	<text transform="matrix(1 0 0 1 100 119.2712)" class="st18 st8 st20">國內交通事故通報  |  2021 | 02-01 ~ 02-07</text>
 </svg>

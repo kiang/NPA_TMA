@@ -109,6 +109,14 @@ while ($line = fgetcsv($a2, 2048)) {
 }
 
 $ywPool = array_keys($counter);
+$numKeys = ['hurts', 'accidents', 'sum_dies', 'sum_hurts', 'sum_accidents'];
+function cmp($a, $b)
+{
+    if ($a['dies'] == $b['dies']) {
+        return 0;
+    }
+    return ($a['dies'] > $b['dies']) ? -1 : 1;
+}
 
 foreach ($ywPool as $yw) {
     $nextMonday = strtotime('next monday', $counter[$yw]['time']);
@@ -124,9 +132,10 @@ foreach ($ywPool as $yw) {
     $counter[$yw]['sum_hurts'] += $counter[$yw]['hurts'];
 
     $report = file_get_contents($basePath . '/art/base.svg');
-    //str_repeat('&#160;', 2);
+    $thisMonday = strtotime('last monday', $counter[$yw]['time']);
+    $nextMonday = strtotime('next monday', $counter[$yw]['time']) - 1;
     $report = strtr($report, [
-        '{{report_date}}' => date('Y-m-d', strtotime('next monday', $counter[$yw]['time'])),
+        '{{report_date}}' => date('Y', $thisMonday) . ' | ' . date('m-d', $thisMonday) . ' ~ ' . date('m-d', $nextMonday),
         '{{new_dies}}' => $counter[$yw]['dies'],
         '{{new_hurts}}' => $counter[$yw]['hurts'],
         '{{new_accidents}}' => $counter[$yw]['accidents'],
@@ -140,7 +149,7 @@ foreach ($ywPool as $yw) {
     $cityTemplate = substr($report, $pos + 14, $posEnd - $pos - 14);
     $loopY = 0;
     $report = substr($report, 0, $pos);
-    ksort($cityCounter[$yw]);
+    uasort($cityCounter[$yw], 'cmp');
     foreach($cityCounter[$yw] AS $city => $data) {
         $report .= strtr($cityTemplate, [
             '{{loop_y}}' => $loopY,

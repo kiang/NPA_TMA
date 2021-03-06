@@ -126,9 +126,10 @@ foreach ($ywPool as $yw) {
     $counter[$yw]['sum_hurts'] += $counter[$yw]['hurts'];
 
     $report = file_get_contents($basePath . '/art/perpetrator.svg');
-    //str_repeat('&#160;', 2);
+    $thisMonday = strtotime('last monday', $counter[$yw]['time']);
+    $nextMonday = strtotime('next monday', $counter[$yw]['time']) - 1;
     $report = strtr($report, [
-        '{{report_date}}' => date('Y-m-d', strtotime('next monday', $counter[$yw]['time'])),
+        '{{report_date}}' => date('Y', $thisMonday) . ' | ' . date('m-d', $thisMonday) . ' ~ ' . date('m-d', $nextMonday),
         '{{new_dies}}' => $counter[$yw]['dies'],
         '{{new_hurts}}' => $counter[$yw]['hurts'],
         '{{new_accidents}}' => $counter[$yw]['accidents'],
