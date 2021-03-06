@@ -4,10 +4,10 @@ $basePath = dirname(__DIR__);
 
 function cmp($a, $b)
 {
-    if ($a['accidents'] == $b['accidents']) {
+    if ($a['dies'] == $b['dies']) {
         return 0;
     }
-    return ($a['accidents'] > $b['accidents']) ? -1 : 1;
+    return ($a['dies'] > $b['dies']) ? -1 : 1;
 }
 
 $counter = $perpetrator = [];
@@ -33,7 +33,8 @@ while ($line = fgetcsv($a1, 2048)) {
         $perpetrator[$yw] = [];
     }
     $parts = explode(';', $line[3]);
-    $item = $parts[0];
+    $parts = explode('-', $parts[0]);
+    $item = array_pop($parts);
     if (!isset($perpetrator[$yw][$item])) {
         $perpetrator[$yw][$item] = [
             'accidents' => 0,
@@ -83,7 +84,8 @@ while ($line = fgetcsv($a2, 2048)) {
         $perpetrator[$yw] = [];
     }
     $parts = explode(';', $line[3]);
-    $item = $parts[0];
+    $parts = explode('-', $parts[0]);
+    $item = array_pop($parts);
     if (!isset($perpetrator[$yw][$item])) {
         $perpetrator[$yw][$item] = [
             'accidents' => 0,
