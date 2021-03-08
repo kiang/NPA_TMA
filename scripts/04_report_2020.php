@@ -146,7 +146,7 @@ $population = [
     '連江縣' => 13279,
 ];
 
-$fh = fopen(__DIR__ . '/tmp.csv', 'w');
+//$fh = fopen(__DIR__ . '/tmp.csv', 'w');
 foreach($cityCounter AS $city => $areaCounter) {
     $report = file_get_contents($basePath . '/art/2020.svg');
     // fputcsv($fh, [$city, round($counter[$city]['dies'] / ($population[$city] / 100000), 2),

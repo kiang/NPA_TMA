@@ -27,14 +27,14 @@
 	<rect class="st0" width="1626" height="2300" />
 	<text transform="matrix(1 0 0 1 94.5001 449.017)" class="st1 st2 st3">死亡</text>
 	<g>
-		<text transform="matrix(1 0 0 1 100 698.1412)" class="st4 st5 st6">110</text>
+		<text transform="matrix(1 0 0 1 100 698.1412)" class="st4 st5 st6">138</text>
 	</g>
 	<g>
 		<rect x="650" y="385.6" class="st7" width="800" height="336.8" />
 		<g>
 			<text transform="matrix(1 0 0 1 700 519.593)" class="st4 st8 st9">受傷</text>
-			<text transform="matrix(1 0 0 1 1000 521.5084)" class="st4 st10 st11">17943</text>
-			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">13117</text>
+			<text transform="matrix(1 0 0 1 1000 521.5084)" class="st4 st10 st11">22877</text>
+			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">16800</text>
 			<text transform="matrix(1 0 0 1 700 649.4965)" class="st4 st8 st9">事故</text>
 		</g>
 	</g>
@@ -45,7 +45,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 200 233.9079)" class="st0 st10 st13">事故率</text>
 				<g>
-					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">1614</text>
+					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">2067</text>
 				</g>
 			</g>
 		</g>
@@ -54,7 +54,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 680 233.908)" class="st0 st10 st13">死亡率</text>
 				<g>
-					<text transform="matrix(1 0 0 1 590 330.2122)" class="st0 st5 st14">13.54</text>
+					<text transform="matrix(1 0 0 1 590 330.2122)" class="st0 st5 st14">16.98</text>
 				</g>
 			</g>
 		</g>
@@ -63,7 +63,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 1160 233.908)" class="st0 st10 st13">受傷率</text>
 				<g>
-					<text transform="matrix(1 0 0 1 1070 330.2122)" class="st0 st5 st14">2208</text>
+					<text transform="matrix(1 0 0 1 1070 330.2122)" class="st0 st5 st14">2815</text>
 				</g>
 			</g>
 		</g>
@@ -72,103 +72,103 @@
 	<text transform="matrix(1 0 0 1 90.5591 810.7965)">
 		
 		<tspan x="0" y="0" class="st4 st10 st16 st17">屏東市</tspan>
-		<tspan x="150.6" y="0" class="st18 st10 st16 st17"> 4365 事故， 20 死亡、 6109 受傷</tspan>
+		<tspan x="150.6" y="0" class="st18 st10 st16 st17"> 5659 事故， 25 死亡、 7891 受傷</tspan>
 		
 		<tspan x="0" y="70" class="st4 st10 st16 st17">內埔鄉</tspan>
-		<tspan x="150.6" y="70" class="st18 st10 st16 st17"> 1004 事故， 13 死亡、 1383 受傷</tspan>
+		<tspan x="150.6" y="70" class="st18 st10 st16 st17"> 1287 事故， 15 死亡、 1769 受傷</tspan>
 		
 		<tspan x="0" y="140" class="st4 st10 st16 st17">長治鄉</tspan>
-		<tspan x="150.6" y="140" class="st18 st10 st16 st17"> 554 事故， 12 死亡、 713 受傷</tspan>
+		<tspan x="150.6" y="140" class="st18 st10 st16 st17"> 717 事故， 14 死亡、 933 受傷</tspan>
 		
 		<tspan x="0" y="210" class="st4 st10 st16 st17">萬丹鄉</tspan>
-		<tspan x="150.6" y="210" class="st18 st10 st16 st17"> 847 事故， 10 死亡、 1116 受傷</tspan>
+		<tspan x="150.6" y="210" class="st18 st10 st16 st17"> 1074 事故， 12 死亡、 1421 受傷</tspan>
 		
 		<tspan x="0" y="280" class="st4 st10 st16 st17">里港鄉</tspan>
-		<tspan x="150.6" y="280" class="st18 st10 st16 st17"> 316 事故， 7 死亡、 425 受傷</tspan>
+		<tspan x="150.6" y="280" class="st18 st10 st16 st17"> 414 事故， 9 死亡、 547 受傷</tspan>
 		
 		<tspan x="0" y="350" class="st4 st10 st16 st17">枋寮鄉</tspan>
-		<tspan x="150.6" y="350" class="st18 st10 st16 st17"> 330 事故， 5 死亡、 454 受傷</tspan>
+		<tspan x="150.6" y="350" class="st18 st10 st16 st17"> 402 事故， 7 死亡、 550 受傷</tspan>
 		
-		<tspan x="0" y="420" class="st4 st10 st16 st17">萬巒鄉</tspan>
-		<tspan x="150.6" y="420" class="st18 st10 st16 st17"> 189 事故， 5 死亡、 254 受傷</tspan>
+		<tspan x="0" y="420" class="st4 st10 st16 st17">枋山鄉</tspan>
+		<tspan x="150.6" y="420" class="st18 st10 st16 st17"> 242 事故， 7 死亡、 339 受傷</tspan>
 		
-		<tspan x="0" y="490" class="st4 st10 st16 st17">新園鄉</tspan>
-		<tspan x="150.6" y="490" class="st18 st10 st16 st17"> 455 事故， 5 死亡、 596 受傷</tspan>
+		<tspan x="0" y="490" class="st4 st10 st16 st17">萬巒鄉</tspan>
+		<tspan x="150.6" y="490" class="st18 st10 st16 st17"> 237 事故， 6 死亡、 311 受傷</tspan>
 		
-		<tspan x="0" y="560" class="st4 st10 st16 st17">枋山鄉</tspan>
-		<tspan x="150.6" y="560" class="st18 st10 st16 st17"> 187 事故， 5 死亡、 252 受傷</tspan>
+		<tspan x="0" y="560" class="st4 st10 st16 st17">新園鄉</tspan>
+		<tspan x="150.6" y="560" class="st18 st10 st16 st17"> 582 事故， 6 死亡、 768 受傷</tspan>
 		
 		<tspan x="0" y="630" class="st4 st10 st16 st17">鹽埔鄉</tspan>
-		<tspan x="150.6" y="630" class="st18 st10 st16 st17"> 302 事故， 3 死亡、 421 受傷</tspan>
+		<tspan x="150.6" y="630" class="st18 st10 st16 st17"> 396 事故， 5 死亡、 543 受傷</tspan>
 		
-		<tspan x="0" y="700" class="st4 st10 st16 st17">南州鄉</tspan>
-		<tspan x="150.6" y="700" class="st18 st10 st16 st17"> 122 事故， 3 死亡、 167 受傷</tspan>
+		<tspan x="0" y="700" class="st4 st10 st16 st17">佳冬鄉</tspan>
+		<tspan x="150.6" y="700" class="st18 st10 st16 st17"> 259 事故， 3 死亡、 339 受傷</tspan>
 		
-		<tspan x="0" y="770" class="st4 st10 st16 st17">滿州鄉</tspan>
-		<tspan x="150.6" y="770" class="st18 st10 st16 st17"> 42 事故， 3 死亡、 51 受傷</tspan>
+		<tspan x="0" y="770" class="st4 st10 st16 st17">車城鄉</tspan>
+		<tspan x="150.6" y="770" class="st18 st10 st16 st17"> 145 事故， 3 死亡、 210 受傷</tspan>
 		
-		<tspan x="0" y="840" class="st4 st10 st16 st17">崁頂鄉</tspan>
-		<tspan x="150.6" y="840" class="st18 st10 st16 st17"> 177 事故， 2 死亡、 240 受傷</tspan>
+		<tspan x="0" y="840" class="st4 st10 st16 st17">南州鄉</tspan>
+		<tspan x="150.6" y="840" class="st18 st10 st16 st17"> 157 事故， 3 死亡、 221 受傷</tspan>
 		
-		<tspan x="0" y="910" class="st4 st10 st16 st17">車城鄉</tspan>
-		<tspan x="150.6" y="910" class="st18 st10 st16 st17"> 118 事故， 2 死亡、 173 受傷</tspan>
+		<tspan x="0" y="910" class="st4 st10 st16 st17">滿州鄉</tspan>
+		<tspan x="150.6" y="910" class="st18 st10 st16 st17"> 56 事故， 3 死亡、 65 受傷</tspan>
 		
-		<tspan x="0" y="980" class="st4 st10 st16 st17">潮州鎮</tspan>
-		<tspan x="150.6" y="980" class="st18 st10 st16 st17"> 912 事故， 2 死亡、 1239 受傷</tspan>
+		<tspan x="0" y="980" class="st4 st10 st16 st17">新埤鄉</tspan>
+		<tspan x="150.6" y="980" class="st18 st10 st16 st17"> 129 事故， 3 死亡、 165 受傷</tspan>
 		
-		<tspan x="0" y="1050" class="st4 st10 st16 st17">九如鄉</tspan>
-		<tspan x="150.6" y="1050" class="st18 st10 st16 st17"> 345 事故， 2 死亡、 452 受傷</tspan>
+		<tspan x="0" y="1050" class="st4 st10 st16 st17">瑪家鄉</tspan>
+		<tspan x="150.6" y="1050" class="st18 st10 st16 st17"> 35 事故， 2 死亡、 46 受傷</tspan>
 		
-		<tspan x="0" y="1120" class="st4 st10 st16 st17">佳冬鄉</tspan>
-		<tspan x="150.6" y="1120" class="st18 st10 st16 st17"> 191 事故， 2 死亡、 253 受傷</tspan>
+		<tspan x="0" y="1120" class="st4 st10 st16 st17">麟洛鄉</tspan>
+		<tspan x="150.6" y="1120" class="st18 st10 st16 st17"> 361 事故， 2 死亡、 478 受傷</tspan>
 		
-		<tspan x="0" y="1190" class="st4 st10 st16 st17">東港鎮</tspan>
-		<tspan x="150.6" y="1190" class="st18 st10 st16 st17"> 798 事故， 2 死亡、 1098 受傷</tspan>
+		<tspan x="0" y="1190" class="st4 st10 st16 st17">崁頂鄉</tspan>
+		<tspan x="150.6" y="1190" class="st18 st10 st16 st17"> 220 事故， 2 死亡、 292 受傷</tspan>
 		
-		<tspan x="0" y="1260" class="st4 st10 st16 st17">新埤鄉</tspan>
-		<tspan x="150.6" y="1260" class="st18 st10 st16 st17"> 98 事故， 2 死亡、 127 受傷</tspan>
+		<tspan x="0" y="1260" class="st4 st10 st16 st17">東港鎮</tspan>
+		<tspan x="150.6" y="1260" class="st18 st10 st16 st17"> 970 事故， 2 死亡、 1328 受傷</tspan>
 		
-		<tspan x="0" y="1330" class="st4 st10 st16 st17">麟洛鄉</tspan>
-		<tspan x="150.6" y="1330" class="st18 st10 st16 st17"> 272 事故， 1 死亡、 363 受傷</tspan>
+		<tspan x="0" y="1330" class="st4 st10 st16 st17">九如鄉</tspan>
+		<tspan x="150.6" y="1330" class="st18 st10 st16 st17"> 439 事故， 2 死亡、 565 受傷</tspan>
 		
-		<tspan x="0" y="1400" class="st4 st10 st16 st17">瑪家鄉</tspan>
-		<tspan x="150.6" y="1400" class="st18 st10 st16 st17"> 25 事故， 1 死亡、 31 受傷</tspan>
+		<tspan x="0" y="1400" class="st4 st10 st16 st17">潮州鎮</tspan>
+		<tspan x="150.6" y="1400" class="st18 st10 st16 st17"> 1160 事故， 2 死亡、 1555 受傷</tspan>
 		
-		<tspan x="0" y="1470" class="st4 st10 st16 st17">恆春鎮</tspan>
-		<tspan x="150.6" y="1470" class="st18 st10 st16 st17"> 539 事故， 1 死亡、 764 受傷</tspan>
+		<tspan x="0" y="1470" class="st4 st10 st16 st17">林邊鄉</tspan>
+		<tspan x="150.6" y="1470" class="st18 st10 st16 st17"> 189 事故， 1 死亡、 242 受傷</tspan>
 		
-		<tspan x="0" y="1540" class="st4 st10 st16 st17">林邊鄉</tspan>
-		<tspan x="150.6" y="1540" class="st18 st10 st16 st17"> 154 事故， 1 死亡、 199 受傷</tspan>
+		<tspan x="0" y="1540" class="st4 st10 st16 st17">恆春鎮</tspan>
+		<tspan x="150.6" y="1540" class="st18 st10 st16 st17"> 659 事故， 1 死亡、 923 受傷</tspan>
 		
 		<tspan x="0" y="1610" class="st4 st10 st16 st17">高樹鄉</tspan>
-		<tspan x="150.6" y="1610" class="st18 st10 st16 st17"> 186 事故， 1 死亡、 247 受傷</tspan>
+		<tspan x="150.6" y="1610" class="st18 st10 st16 st17"> 250 事故， 1 死亡、 327 受傷</tspan>
 		
 		<tspan x="0" y="1680" class="st4 st10 st16 st17">竹田鄉</tspan>
-		<tspan x="150.6" y="1680" class="st18 st10 st16 st17"> 259 事故， 0 死亡、 358 受傷</tspan>
+		<tspan x="150.6" y="1680" class="st18 st10 st16 st17"> 343 事故， 1 死亡、 469 受傷</tspan>
 		
-		<tspan x="0" y="1750" class="st4 st10 st16 st17">獅子鄉</tspan>
-		<tspan x="150.6" y="1750" class="st18 st10 st16 st17"> 51 事故， 0 死亡、 68 受傷</tspan>
+		<tspan x="0" y="1750" class="st4 st10 st16 st17">春日鄉</tspan>
+		<tspan x="150.6" y="1750" class="st18 st10 st16 st17"> 14 事故， 1 死亡、 15 受傷</tspan>
 		
-		<tspan x="0" y="1820" class="st4 st10 st16 st17">來義鄉</tspan>
-		<tspan x="150.6" y="1820" class="st18 st10 st16 st17"> 12 事故， 0 死亡、 16 受傷</tspan>
+		<tspan x="0" y="1820" class="st4 st10 st16 st17">獅子鄉</tspan>
+		<tspan x="150.6" y="1820" class="st18 st10 st16 st17"> 61 事故， 0 死亡、 78 受傷</tspan>
 		
-		<tspan x="0" y="1890" class="st4 st10 st16 st17">琉球鄉</tspan>
-		<tspan x="150.6" y="1890" class="st18 st10 st16 st17"> 119 事故， 0 死亡、 199 受傷</tspan>
+		<tspan x="0" y="1890" class="st4 st10 st16 st17">來義鄉</tspan>
+		<tspan x="150.6" y="1890" class="st18 st10 st16 st17"> 17 事故， 0 死亡、 23 受傷</tspan>
 		
-		<tspan x="0" y="1960" class="st4 st10 st16 st17">霧臺鄉</tspan>
-		<tspan x="150.6" y="1960" class="st18 st10 st16 st17"> 47 事故， 0 死亡、 55 受傷</tspan>
+		<tspan x="0" y="1960" class="st4 st10 st16 st17">琉球鄉</tspan>
+		<tspan x="150.6" y="1960" class="st18 st10 st16 st17"> 143 事故， 0 死亡、 244 受傷</tspan>
 		
-		<tspan x="0" y="2030" class="st4 st10 st16 st17">三地門鄉</tspan>
-		<tspan x="150.6" y="2030" class="st18 st10 st16 st17"> 73 事故， 0 死亡、 86 受傷</tspan>
+		<tspan x="0" y="2030" class="st4 st10 st16 st17">霧臺鄉</tspan>
+		<tspan x="150.6" y="2030" class="st18 st10 st16 st17"> 60 事故， 0 死亡、 70 受傷</tspan>
 		
-		<tspan x="0" y="2100" class="st4 st10 st16 st17">春日鄉</tspan>
-		<tspan x="150.6" y="2100" class="st18 st10 st16 st17"> 9 事故， 0 死亡、 11 受傷</tspan>
+		<tspan x="0" y="2100" class="st4 st10 st16 st17">三地門鄉</tspan>
+		<tspan x="150.6" y="2100" class="st18 st10 st16 st17"> 100 事故， 0 死亡、 123 受傷</tspan>
 		
 		<tspan x="0" y="2170" class="st4 st10 st16 st17">牡丹鄉</tspan>
-		<tspan x="150.6" y="2170" class="st18 st10 st16 st17"> 15 事故， 0 死亡、 19 受傷</tspan>
+		<tspan x="150.6" y="2170" class="st18 st10 st16 st17"> 16 事故， 0 死亡、 20 受傷</tspan>
 		
 		<tspan x="0" y="2240" class="st4 st10 st16 st17">泰武鄉</tspan>
-		<tspan x="150.6" y="2240" class="st18 st10 st16 st17"> 4 事故， 0 死亡、 4 受傷</tspan>
+		<tspan x="150.6" y="2240" class="st18 st10 st16 st17"> 7 事故， 0 死亡、 7 受傷</tspan>
 			</text>
 	<text transform="matrix(1 0 0 1 100 119.2712)" class="st18 st8 st20">國內交通事故通報  |  2020 | 屏東縣</text>
 </svg>

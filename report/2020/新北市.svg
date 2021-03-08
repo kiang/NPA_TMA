@@ -27,14 +27,14 @@
 	<rect class="st0" width="1626" height="2300" />
 	<text transform="matrix(1 0 0 1 94.5001 449.017)" class="st1 st2 st3">死亡</text>
 	<g>
-		<text transform="matrix(1 0 0 1 100 698.1412)" class="st4 st5 st6">117</text>
+		<text transform="matrix(1 0 0 1 100 698.1412)" class="st4 st5 st6">137</text>
 	</g>
 	<g>
 		<rect x="650" y="385.6" class="st7" width="800" height="336.8" />
 		<g>
 			<text transform="matrix(1 0 0 1 700 519.593)" class="st4 st8 st9">受傷</text>
-			<text transform="matrix(1 0 0 1 1000 521.5084)" class="st4 st10 st11">44679</text>
-			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">32990</text>
+			<text transform="matrix(1 0 0 1 1000 521.5084)" class="st4 st10 st11">57839</text>
+			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">42746</text>
 			<text transform="matrix(1 0 0 1 700 649.4965)" class="st4 st8 st9">事故</text>
 		</g>
 	</g>
@@ -45,7 +45,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 200 233.9079)" class="st0 st10 st13">事故率</text>
 				<g>
-					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">818</text>
+					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">1060</text>
 				</g>
 			</g>
 		</g>
@@ -54,7 +54,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 680 233.908)" class="st0 st10 st13">死亡率</text>
 				<g>
-					<text transform="matrix(1 0 0 1 590 330.2122)" class="st0 st5 st14">2.9</text>
+					<text transform="matrix(1 0 0 1 590 330.2122)" class="st0 st5 st14">3.4</text>
 				</g>
 			</g>
 		</g>
@@ -63,7 +63,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 1160 233.908)" class="st0 st10 st13">受傷率</text>
 				<g>
-					<text transform="matrix(1 0 0 1 1070 330.2122)" class="st0 st5 st14">1108</text>
+					<text transform="matrix(1 0 0 1 1070 330.2122)" class="st0 st5 st14">1435</text>
 				</g>
 			</g>
 		</g>
@@ -72,91 +72,91 @@
 	<text transform="matrix(1 0 0 1 90.5591 810.7965)">
 		
 		<tspan x="0" y="0" class="st4 st10 st16 st17">新莊區</tspan>
-		<tspan x="150.6" y="0" class="st18 st10 st16 st17"> 3063 事故， 14 死亡、 4278 受傷</tspan>
+		<tspan x="150.6" y="0" class="st18 st10 st16 st17"> 3983 事故， 17 死亡、 5543 受傷</tspan>
 		
 		<tspan x="0" y="70" class="st4 st10 st16 st17">板橋區</tspan>
-		<tspan x="150.6" y="70" class="st18 st10 st16 st17"> 4424 事故， 14 死亡、 6181 受傷</tspan>
+		<tspan x="150.6" y="70" class="st18 st10 st16 st17"> 5779 事故， 14 死亡、 8122 受傷</tspan>
 		
 		<tspan x="0" y="140" class="st4 st10 st16 st17">汐止區</tspan>
-		<tspan x="150.6" y="140" class="st18 st10 st16 st17"> 1507 事故， 9 死亡、 1987 受傷</tspan>
+		<tspan x="150.6" y="140" class="st18 st10 st16 st17"> 1941 事故， 10 死亡、 2544 受傷</tspan>
 		
-		<tspan x="0" y="210" class="st4 st10 st16 st17">鶯歌區</tspan>
-		<tspan x="150.6" y="210" class="st18 st10 st16 st17"> 752 事故， 8 死亡、 978 受傷</tspan>
+		<tspan x="0" y="210" class="st4 st10 st16 st17">三峽區</tspan>
+		<tspan x="150.6" y="210" class="st18 st10 st16 st17"> 1295 事故， 8 死亡、 1660 受傷</tspan>
 		
-		<tspan x="0" y="280" class="st4 st10 st16 st17">新店區</tspan>
-		<tspan x="150.6" y="280" class="st18 st10 st16 st17"> 2163 事故， 7 死亡、 2868 受傷</tspan>
+		<tspan x="0" y="280" class="st4 st10 st16 st17">五股區</tspan>
+		<tspan x="150.6" y="280" class="st18 st10 st16 st17"> 1762 事故， 8 死亡、 2296 受傷</tspan>
 		
-		<tspan x="0" y="350" class="st4 st10 st16 st17">土城區</tspan>
-		<tspan x="150.6" y="350" class="st18 st10 st16 st17"> 1636 事故， 7 死亡、 2174 受傷</tspan>
+		<tspan x="0" y="350" class="st4 st10 st16 st17">鶯歌區</tspan>
+		<tspan x="150.6" y="350" class="st18 st10 st16 st17"> 990 事故， 8 死亡、 1284 受傷</tspan>
 		
-		<tspan x="0" y="420" class="st4 st10 st16 st17">五股區</tspan>
-		<tspan x="150.6" y="420" class="st18 st10 st16 st17"> 1374 事故， 6 死亡、 1798 受傷</tspan>
+		<tspan x="0" y="420" class="st4 st10 st16 st17">土城區</tspan>
+		<tspan x="150.6" y="420" class="st18 st10 st16 st17"> 2134 事故， 8 死亡、 2841 受傷</tspan>
 		
 		<tspan x="0" y="490" class="st4 st10 st16 st17">三重區</tspan>
-		<tspan x="150.6" y="490" class="st18 st10 st16 st17"> 4313 事故， 6 死亡、 6094 受傷</tspan>
+		<tspan x="150.6" y="490" class="st18 st10 st16 st17"> 5579 事故， 8 死亡、 7922 受傷</tspan>
 		
-		<tspan x="0" y="560" class="st4 st10 st16 st17">樹林區</tspan>
-		<tspan x="150.6" y="560" class="st18 st10 st16 st17"> 943 事故， 4 死亡、 1302 受傷</tspan>
+		<tspan x="0" y="560" class="st4 st10 st16 st17">新店區</tspan>
+		<tspan x="150.6" y="560" class="st18 st10 st16 st17"> 2739 事故， 7 死亡、 3596 受傷</tspan>
 		
-		<tspan x="0" y="630" class="st4 st10 st16 st17">淡水區</tspan>
-		<tspan x="150.6" y="630" class="st18 st10 st16 st17"> 1563 事故， 4 死亡、 2102 受傷</tspan>
+		<tspan x="0" y="630" class="st4 st10 st16 st17">林口區</tspan>
+		<tspan x="150.6" y="630" class="st18 st10 st16 st17"> 1174 事故， 5 死亡、 1421 受傷</tspan>
 		
-		<tspan x="0" y="700" class="st4 st10 st16 st17">三峽區</tspan>
-		<tspan x="150.6" y="700" class="st18 st10 st16 st17"> 1004 事故， 4 死亡、 1306 受傷</tspan>
+		<tspan x="0" y="700" class="st4 st10 st16 st17">蘆洲區</tspan>
+		<tspan x="150.6" y="700" class="st18 st10 st16 st17"> 2209 事故， 5 死亡、 2990 受傷</tspan>
 		
-		<tspan x="0" y="770" class="st4 st10 st16 st17">中和區</tspan>
-		<tspan x="150.6" y="770" class="st18 st10 st16 st17"> 3106 事故， 4 死亡、 4142 受傷</tspan>
+		<tspan x="0" y="770" class="st4 st10 st16 st17">淡水區</tspan>
+		<tspan x="150.6" y="770" class="st18 st10 st16 st17"> 2103 事故， 5 死亡、 2829 受傷</tspan>
 		
-		<tspan x="0" y="840" class="st4 st10 st16 st17">蘆洲區</tspan>
-		<tspan x="150.6" y="840" class="st18 st10 st16 st17"> 1740 事故， 4 死亡、 2363 受傷</tspan>
+		<tspan x="0" y="840" class="st4 st10 st16 st17">樹林區</tspan>
+		<tspan x="150.6" y="840" class="st18 st10 st16 st17"> 1209 事故， 4 死亡、 1674 受傷</tspan>
 		
-		<tspan x="0" y="910" class="st4 st10 st16 st17">林口區</tspan>
-		<tspan x="150.6" y="910" class="st18 st10 st16 st17"> 882 事故， 3 死亡、 1066 受傷</tspan>
+		<tspan x="0" y="910" class="st4 st10 st16 st17">中和區</tspan>
+		<tspan x="150.6" y="910" class="st18 st10 st16 st17"> 4023 事故， 4 死亡、 5349 受傷</tspan>
 		
-		<tspan x="0" y="980" class="st4 st10 st16 st17">貢寮區</tspan>
-		<tspan x="150.6" y="980" class="st18 st10 st16 st17"> 42 事故， 3 死亡、 50 受傷</tspan>
+		<tspan x="0" y="980" class="st4 st10 st16 st17">坪林區</tspan>
+		<tspan x="150.6" y="980" class="st18 st10 st16 st17"> 235 事故， 3 死亡、 290 受傷</tspan>
 		
-		<tspan x="0" y="1050" class="st4 st10 st16 st17">坪林區</tspan>
-		<tspan x="150.6" y="1050" class="st18 st10 st16 st17"> 211 事故， 3 死亡、 257 受傷</tspan>
+		<tspan x="0" y="1050" class="st4 st10 st16 st17">瑞芳區</tspan>
+		<tspan x="150.6" y="1050" class="st18 st10 st16 st17"> 202 事故， 3 死亡、 264 受傷</tspan>
 		
-		<tspan x="0" y="1120" class="st4 st10 st16 st17">石碇區</tspan>
-		<tspan x="150.6" y="1120" class="st18 st10 st16 st17"> 123 事故， 2 死亡、 149 受傷</tspan>
+		<tspan x="0" y="1120" class="st4 st10 st16 st17">貢寮區</tspan>
+		<tspan x="150.6" y="1120" class="st18 st10 st16 st17"> 55 事故， 3 死亡、 69 受傷</tspan>
 		
-		<tspan x="0" y="1190" class="st4 st10 st16 st17">八里區</tspan>
-		<tspan x="150.6" y="1190" class="st18 st10 st16 st17"> 489 事故， 2 死亡、 640 受傷</tspan>
+		<tspan x="0" y="1190" class="st4 st10 st16 st17">泰山區</tspan>
+		<tspan x="150.6" y="1190" class="st18 st10 st16 st17"> 1433 事故， 3 死亡、 1880 受傷</tspan>
 		
-		<tspan x="0" y="1260" class="st4 st10 st16 st17">瑞芳區</tspan>
-		<tspan x="150.6" y="1260" class="st18 st10 st16 st17"> 169 事故， 2 死亡、 221 受傷</tspan>
+		<tspan x="0" y="1260" class="st4 st10 st16 st17">八里區</tspan>
+		<tspan x="150.6" y="1260" class="st18 st10 st16 st17"> 622 事故， 3 死亡、 801 受傷</tspan>
 		
-		<tspan x="0" y="1330" class="st4 st10 st16 st17">石門區</tspan>
-		<tspan x="150.6" y="1330" class="st18 st10 st16 st17"> 56 事故， 2 死亡、 76 受傷</tspan>
+		<tspan x="0" y="1330" class="st4 st10 st16 st17">永和區</tspan>
+		<tspan x="150.6" y="1330" class="st18 st10 st16 st17"> 2349 事故， 2 死亡、 3263 受傷</tspan>
 		
-		<tspan x="0" y="1400" class="st4 st10 st16 st17">泰山區</tspan>
-		<tspan x="150.6" y="1400" class="st18 st10 st16 st17"> 1082 事故， 2 死亡、 1410 受傷</tspan>
+		<tspan x="0" y="1400" class="st4 st10 st16 st17">石門區</tspan>
+		<tspan x="150.6" y="1400" class="st18 st10 st16 st17"> 71 事故， 2 死亡、 97 受傷</tspan>
 		
-		<tspan x="0" y="1470" class="st4 st10 st16 st17">永和區</tspan>
-		<tspan x="150.6" y="1470" class="st18 st10 st16 st17"> 1783 事故， 2 死亡、 2491 受傷</tspan>
+		<tspan x="0" y="1470" class="st4 st10 st16 st17">石碇區</tspan>
+		<tspan x="150.6" y="1470" class="st18 st10 st16 st17"> 148 事故， 2 死亡、 182 受傷</tspan>
 		
 		<tspan x="0" y="1540" class="st4 st10 st16 st17">烏來區</tspan>
-		<tspan x="150.6" y="1540" class="st18 st10 st16 st17"> 24 事故， 1 死亡、 27 受傷</tspan>
+		<tspan x="150.6" y="1540" class="st18 st10 st16 st17"> 33 事故， 1 死亡、 37 受傷</tspan>
 		
-		<tspan x="0" y="1610" class="st4 st10 st16 st17">金山區</tspan>
-		<tspan x="150.6" y="1610" class="st18 st10 st16 st17"> 97 事故， 1 死亡、 129 受傷</tspan>
+		<tspan x="0" y="1610" class="st4 st10 st16 st17">萬里區</tspan>
+		<tspan x="150.6" y="1610" class="st18 st10 st16 st17"> 118 事故， 1 死亡、 161 受傷</tspan>
 		
-		<tspan x="0" y="1680" class="st4 st10 st16 st17">萬里區</tspan>
-		<tspan x="150.6" y="1680" class="st18 st10 st16 st17"> 99 事故， 1 死亡、 135 受傷</tspan>
+		<tspan x="0" y="1680" class="st4 st10 st16 st17">金山區</tspan>
+		<tspan x="150.6" y="1680" class="st18 st10 st16 st17"> 128 事故， 1 死亡、 163 受傷</tspan>
 		
-		<tspan x="0" y="1750" class="st4 st10 st16 st17">三芝區</tspan>
-		<tspan x="150.6" y="1750" class="st18 st10 st16 st17"> 129 事故， 1 死亡、 169 受傷</tspan>
+		<tspan x="0" y="1750" class="st4 st10 st16 st17">深坑區</tspan>
+		<tspan x="150.6" y="1750" class="st18 st10 st16 st17"> 224 事故， 1 死亡、 292 受傷</tspan>
 		
-		<tspan x="0" y="1820" class="st4 st10 st16 st17">深坑區</tspan>
-		<tspan x="150.6" y="1820" class="st18 st10 st16 st17"> 175 事故， 1 死亡、 229 受傷</tspan>
+		<tspan x="0" y="1820" class="st4 st10 st16 st17">三芝區</tspan>
+		<tspan x="150.6" y="1820" class="st18 st10 st16 st17"> 159 事故， 1 死亡、 204 受傷</tspan>
 		
 		<tspan x="0" y="1890" class="st4 st10 st16 st17">雙溪區</tspan>
-		<tspan x="150.6" y="1890" class="st18 st10 st16 st17"> 20 事故， 0 死亡、 24 受傷</tspan>
+		<tspan x="150.6" y="1890" class="st18 st10 st16 st17"> 25 事故， 0 死亡、 29 受傷</tspan>
 		
 		<tspan x="0" y="1960" class="st4 st10 st16 st17">平溪區</tspan>
-		<tspan x="150.6" y="1960" class="st18 st10 st16 st17"> 21 事故， 0 死亡、 33 受傷</tspan>
+		<tspan x="150.6" y="1960" class="st18 st10 st16 st17"> 24 事故， 0 死亡、 36 受傷</tspan>
 			</text>
 	<text transform="matrix(1 0 0 1 100 119.2712)" class="st18 st8 st20">國內交通事故通報  |  2020 | 新北市</text>
 </svg>

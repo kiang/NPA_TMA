@@ -27,14 +27,14 @@
 	<rect class="st0" width="1626" height="2300" />
 	<text transform="matrix(1 0 0 1 94.5001 449.017)" class="st1 st2 st3">死亡</text>
 	<g>
-		<text transform="matrix(1 0 0 1 100 698.1412)" class="st4 st5 st6">13</text>
+		<text transform="matrix(1 0 0 1 100 698.1412)" class="st4 st5 st6">16</text>
 	</g>
 	<g>
 		<rect x="650" y="385.6" class="st7" width="800" height="336.8" />
 		<g>
 			<text transform="matrix(1 0 0 1 700 519.593)" class="st4 st8 st9">受傷</text>
-			<text transform="matrix(1 0 0 1 1000 521.5084)" class="st4 st10 st11">2888</text>
-			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">2239</text>
+			<text transform="matrix(1 0 0 1 1000 521.5084)" class="st4 st10 st11">3954</text>
+			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">3034</text>
 			<text transform="matrix(1 0 0 1 700 649.4965)" class="st4 st8 st9">事故</text>
 		</g>
 	</g>
@@ -45,7 +45,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 200 233.9079)" class="st0 st10 st13">事故率</text>
 				<g>
-					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">842</text>
+					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">1141</text>
 				</g>
 			</g>
 		</g>
@@ -54,7 +54,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 680 233.908)" class="st0 st10 st13">死亡率</text>
 				<g>
-					<text transform="matrix(1 0 0 1 590 330.2122)" class="st0 st5 st14">4.89</text>
+					<text transform="matrix(1 0 0 1 590 330.2122)" class="st0 st5 st14">6.01</text>
 				</g>
 			</g>
 		</g>
@@ -63,7 +63,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 1160 233.908)" class="st0 st10 st13">受傷率</text>
 				<g>
-					<text transform="matrix(1 0 0 1 1070 330.2122)" class="st0 st5 st14">1086</text>
+					<text transform="matrix(1 0 0 1 1070 330.2122)" class="st0 st5 st14">1486</text>
 				</g>
 			</g>
 		</g>
@@ -72,10 +72,10 @@
 	<text transform="matrix(1 0 0 1 90.5591 810.7965)">
 		
 		<tspan x="0" y="0" class="st4 st10 st16 st17">西區</tspan>
-		<tspan x="150.6" y="0" class="st18 st10 st16 st17"> 1131 事故， 10 死亡、 1452 受傷</tspan>
+		<tspan x="150.6" y="0" class="st18 st10 st16 st17"> 1517 事故， 12 死亡、 1969 受傷</tspan>
 		
 		<tspan x="0" y="70" class="st4 st10 st16 st17">東區</tspan>
-		<tspan x="150.6" y="70" class="st18 st10 st16 st17"> 1108 事故， 3 死亡、 1436 受傷</tspan>
+		<tspan x="150.6" y="70" class="st18 st10 st16 st17"> 1517 事故， 4 死亡、 1985 受傷</tspan>
 			</text>
 	<text transform="matrix(1 0 0 1 100 119.2712)" class="st18 st8 st20">國內交通事故通報  |  2020 | 嘉義市</text>
 </svg>
