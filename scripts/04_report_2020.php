@@ -146,12 +146,12 @@ $population = [
     '連江縣' => 13279,
 ];
 
-//$fh = fopen(__DIR__ . '/tmp.csv', 'w');
+$fh = fopen(__DIR__ . '/tmp.csv', 'w');
 foreach($cityCounter AS $city => $areaCounter) {
     $report = file_get_contents($basePath . '/art/2020.svg');
-    // fputcsv($fh, [$city, round($counter[$city]['dies'] / ($population[$city] / 100000), 2),
-    // round($counter[$city]['hurts'] / ($population[$city] / 100000), 0),
-    // round($counter[$city]['accidents'] / ($population[$city] / 100000), 0)]);
+    fputcsv($fh, [$city, round($counter[$city]['dies'] / ($population[$city] / 100000), 2),
+    round($counter[$city]['hurts'] / ($population[$city] / 100000), 0),
+    round($counter[$city]['accidents'] / ($population[$city] / 100000), 0)]);
     $report = strtr($report, [
         '{{report_date}}' => '2020 | ' . $city,
         '{{new_dies}}' => $counter[$city]['dies'],
@@ -170,12 +170,15 @@ foreach($cityCounter AS $city => $areaCounter) {
     uasort($areaCounter, 'cmp');
 
     $loopY = 0;
+    $reportFh = fopen($svgPath . '/' . $city . '.csv', 'w');
+    fputcsv($reportFh, ['行政區', '事故', '死亡', '受傷']);
     foreach($areaCounter AS $area => $data) {
         $report .= strtr($cityTemplate, [
             '{{loop_y}}' => $loopY,
             '{{loop_city}}' => $area,
             '{{loop_text}}' => " {$data['accidents']} 事故， {$data['dies']} 死亡、 {$data['hurts']} 受傷",
         ]);
+        fputcsv($reportFh, [$area, $data['accidents'], $data['dies'], $data['hurts']]);
         $loopY += 70;
     }
     file_put_contents($svgPath . '/' . $city . '.svg', $report . $reportEnd);
