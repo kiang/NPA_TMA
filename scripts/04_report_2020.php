@@ -146,12 +146,14 @@ $population = [
     '連江縣' => 13279,
 ];
 
-$fh = fopen(__DIR__ . '/tmp.csv', 'w');
+$fh = fopen($svgPath . '/summary.csv', 'w');
+fputcsv($fh, ['縣市', '死亡', '事故', '受傷', '10萬人發生率 - 死亡', '10萬人發生率 - 事故', '10萬人發生率 - 受傷']);
 foreach($cityCounter AS $city => $areaCounter) {
     $report = file_get_contents($basePath . '/art/2020.svg');
-    fputcsv($fh, [$city, round($counter[$city]['dies'] / ($population[$city] / 100000), 2),
-    round($counter[$city]['hurts'] / ($population[$city] / 100000), 0),
-    round($counter[$city]['accidents'] / ($population[$city] / 100000), 0)]);
+    fputcsv($fh, [$city, $counter[$city]['dies'], $counter[$city]['accidents'], $counter[$city]['hurts'],
+    round($counter[$city]['dies'] / ($population[$city] / 100000), 2),
+    round($counter[$city]['accidents'] / ($population[$city] / 100000), 0),
+    round($counter[$city]['hurts'] / ($population[$city] / 100000), 0)]);
     $report = strtr($report, [
         '{{report_date}}' => '2020 | ' . $city,
         '{{new_dies}}' => $counter[$city]['dies'],
