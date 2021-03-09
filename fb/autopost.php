@@ -3,6 +3,14 @@
  * ref
  * 1. https://adamboother.com/blog/automatically-posting-to-a-facebook-page-using-the-facebook-sdk-v5-for-php-facebook-api/
  * 2. https://phppot.com/php/publishing-multi-photo-stories-to-facebook-using-php-sdk/
+ * 
+ * generate the token
+ * https://developers.facebook.com/tools/explorer/
+ * 
+ * permission: pages_manage_posts, pages_read_engagement, pages_show_list
+ * 
+ * remember to extend token expire date every 2 months
+ * https://developers.facebook.com/tools/debug/accesstoken/?access_token=
  */
 require_once __DIR__ . '/vendor/autoload.php';
 $config = require __DIR__ . '/config.php';
