@@ -12,27 +12,74 @@
  * remember to extend token expire date every 2 months
  * https://developers.facebook.com/tools/debug/accesstoken/?access_token=
  */
-require_once __DIR__ . '/vendor/autoload.php';
-$config = require __DIR__ . '/config.php';
+$basePath = dirname(__DIR__);
+require_once $basePath . '/fb/vendor/autoload.php';
+$config = require $basePath . '/fb/config.php';
 
+$reportFiles = $reports = [];
+foreach(glob($basePath . '/report/city/*/*.json') AS $jsonFile) {
+    $reportFiles[] = $jsonFile;
+}
+rsort($reportFiles);
+for($i = 0; $i < 5; $i++) {
+    $reports[$i] = json_decode(file_get_contents($reportFiles[$i]), true);
+    $reports[$i]['svg'] = substr($reportFiles[$i], 0, -4) . 'svg';
+}
+
+$message = '國內交通事故通報 ' . date('Y', $reports[0]['timeBegin']) . ' | ' . date('m-d', $reports[0]['timeBegin']) . ' ~ ' . date('m-d', $reports[0]['timeEnd']);
+$message .= "\n統計今年累計至本週共發生 {$reports[0]['sum_accidents']} 起事故，造成 {$reports[0]['sum_dies']} 例死亡、 {$reports[0]['sum_hurts']} 例受傷";
+$message .= "\n\n❗本週新增 {$reports[0]['new_dies']} 例死亡，";
+$key = key($reports[0]['city']);
+$message .= "{$key} {$reports[0]['city'][$key]['dies']} 例、";
+next($reports[0]['city']);
+$key = key($reports[0]['city']);
+$message .= "{$key} {$reports[0]['city'][$key]['dies']} 例、";
+next($reports[0]['city']);
+$key = key($reports[0]['city']);
+$message .= "{$key} {$reports[0]['city'][$key]['dies']} 例❗";
+
+$message .= "\n⭐全部報表 - https://github.com/kiang/NPA_TMA/tree/master/report/";
+$message .= "\n⭐地圖 - https://kiang.github.io/NPA_TMA/";
+
+$message .= "\n\n✏" . date('m-d', $reports[1]['timeBegin']) . ' ~ ' . date('m-d', $reports[1]['timeEnd']);
+$message .= " 新增 {$reports[1]['new_dies']} 例死亡、 {$reports[1]['new_hurts']} 例受傷與 {$reports[1]['new_accidents']} 起事故";
+$message .= "\n✏" . date('m-d', $reports[2]['timeBegin']) . ' ~ ' . date('m-d', $reports[2]['timeEnd']);
+$message .= " 新增 {$reports[2]['new_dies']} 例死亡、 {$reports[2]['new_hurts']} 例受傷與 {$reports[2]['new_accidents']} 起事故";
+$message .= "\n✏" . date('m-d', $reports[3]['timeBegin']) . ' ~ ' . date('m-d', $reports[3]['timeEnd']);
+$message .= " 新增 {$reports[3]['new_dies']} 例死亡、 {$reports[3]['new_hurts']} 例受傷與 {$reports[3]['new_accidents']} 起事故";
+$message .= "\n✏" . date('m-d', $reports[4]['timeBegin']) . ' ~ ' . date('m-d', $reports[4]['timeEnd']);
+$message .= " 新增 {$reports[4]['new_dies']} 例死亡、 {$reports[4]['new_hurts']} 例受傷與 {$reports[4]['new_accidents']} 起事故";
+$message .= "\n⭐結算日期 - " . date('Y-m-d');
+$message .= "\n\n#交通安全最前線 #謝謝辛苦的警察人員";
+
+$imgPath = $basePath . '/fb/tmp';
+if(!file_exists($imgPath)) {
+    mkdir($imgPath, 0777);
+}
 $fb = new Facebook\Facebook([
     'app_id' => $config['app_id'],
     'app_secret' => $config['app_secret'],
     'default_graph_version' => 'v2.2',
 ]);
-
-$photos = [
-    __DIR__ . '/tmp/img_to_post1.png',
-    __DIR__ . '/tmp/img_to_post2.png',
-    __DIR__ . '/tmp/img_to_post3.png',
-    __DIR__ . '/tmp/img_to_post4.png',
-];
 $media = [];
-foreach($photos AS $photo) {
+
+foreach($reports AS $k => $report) {
+    $photoMessage = '國內交通事故通報 ' . date('Y', $report['timeBegin']) . ' | ' . date('m-d', $report['timeBegin']) . ' ~ ' . date('m-d', $report['timeEnd']);
+    $photoMessage .= "\n\n❗本週新增 {$report['new_accidents']} 起事故，有 {$report['new_dies']} 例死亡、{$report['new_hurts']} 例受傷❗\n";
+    foreach($report['city'] AS $city => $cityReport) {
+        $photoMessage .= "\n✏{$city} 有 {$cityReport['accidents']} 起事故，有 {$cityReport['dies']} 例死亡、{$cityReport['hurts']} 例受傷";
+    }
+    $photoMessage .= "\n⭐結算日期 - " . date('Y-m-d');
+    $imgFile = $imgPath . '/' . $k . '.png';
+    if(file_exists($imgFile)) {
+        unlink($imgFile);
+    }
+    exec('inkscape -z ' . $report['svg'] . ' -e ' . $imgFile);
+
     try {
         $response = $fb->post('/me/photos', [
-            'message' => '',
-            'source' => $fb->fileToUpload($photo),
+            'message' => $photoMessage,
+            'source' => $fb->fileToUpload($imgFile),
             'published' => false,
         ], $config['token']);    
     } catch (Facebook\Exceptions\FacebookResponseException $e) {
@@ -44,17 +91,6 @@ foreach($photos AS $photo) {
     }
     $media[] = ['media_fbid' => $response->getDecodedBody()['id']];
 }
-
-$message = '國內交通事故通報 2021 | 02-22 ~ 02-28';
-$message .= "\n\n❗新增 31 例死亡，桃園市 6 例、新竹縣 5 例、高雄市 5 例❗";
-$message .= "\n⭐全部報表 - https://github.com/kiang/NPA_TMA/tree/master/report/";
-$message .= "\n⭐地圖 - https://kiang.github.io/NPA_TMA/";
-$message .= "\n\n✏警政署週一(3/8)更新 A1 即時交通事故資料，共新增 75 筆事故資料，其中 02-22 ~ 02-28 新增 31 例死亡。";
-$message .= "\n\n✏02-22 ~ 02-28 新增 31 例死亡、 22 例受傷與 29 起事故";
-$message .= "\n✏02-15 ~ 02-21 新增 41 例死亡、 676 例受傷與 496 起事故";
-$message .= "\n✏02-08 ~ 02-14 新增 43 例死亡、 2872 例受傷與 2166 起事故";
-$message .= "\n✏02-01 ~ 02-07 新增 48 例死亡、 4844 例受傷與 3625 起事故";
-$message .= "\n\n#交通安全最前線 #謝謝辛苦的警察人員";
 
 //Post property to Facebook
 $linkData = [
