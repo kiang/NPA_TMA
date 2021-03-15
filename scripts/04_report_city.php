@@ -172,6 +172,6 @@ foreach ($ywPool as $yw) {
         'sum_dies' => $counter[$yw]['sum_dies'],
         'sum_hurts' => $counter[$yw]['sum_hurts'],
         'sum_accidents' => $counter[$yw]['sum_accidents'],
-        'cityies' => $cityCounter[$yw],
+        'city' => $cityCounter[$yw],
     ]));
 }
