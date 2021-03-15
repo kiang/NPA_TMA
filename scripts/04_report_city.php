@@ -163,4 +163,15 @@ foreach ($ywPool as $yw) {
         mkdir($svgPath, 0777, true);
     }
     file_put_contents($svgPath . '/' . $yw . '.svg', $report . $reportEnd);
+    file_put_contents($svgPath . '/' . $yw . '.json', json_encode([
+        'timeBegin' => $thisMonday,
+        'timeEnd' => $nextMonday,
+        'new_dies' => $counter[$yw]['dies'],
+        'new_hurts' => $counter[$yw]['hurts'],
+        'new_accidents' => $counter[$yw]['accidents'],
+        'sum_dies' => $counter[$yw]['sum_dies'],
+        'sum_hurts' => $counter[$yw]['sum_hurts'],
+        'sum_accidents' => $counter[$yw]['sum_accidents'],
+        'cityies' => $cityCounter,
+    ]));
 }
