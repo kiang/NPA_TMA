@@ -25,9 +25,13 @@ for($i = 0; $i < 5; $i++) {
     $reports[$i] = json_decode(file_get_contents($reportFiles[$i]), true);
     $reports[$i]['svg'] = substr($reportFiles[$i], 0, -4) . 'svg';
 }
+$yearDays = date('z', $reports[0]['timeEnd']) + 1;
+$yearDies = round($reports[0]['sum_dies'] / $yearDays, 2);
+$yearAccidents = round($reports[0]['sum_accidents'] / $yearDays, 0);
 
 $message = '國內交通事故通報 ' . date('Y', $reports[0]['timeBegin']) . ' | ' . date('m-d', $reports[0]['timeBegin']) . ' ~ ' . date('m-d', $reports[0]['timeEnd']);
-$message .= "\n統計今年累計至本週共發生 {$reports[0]['sum_accidents']} 起事故，造成 {$reports[0]['sum_dies']} 例死亡、 {$reports[0]['sum_hurts']} 例受傷";
+$message .= "\n\n統計今年累計至本週共發生 {$reports[0]['sum_accidents']} 起事故，造成 {$reports[0]['sum_dies']} 例死亡、 {$reports[0]['sum_hurts']} 例受傷";
+$message .= "\n" . date('m-d', $reports[0]['timeEnd']) . " 為今年第 {$yearDays} 天，平均每天有 {$yearAccidents} 起事故、 {$yearDies} 人死亡";
 $message .= "\n\n❗本週新增 {$reports[0]['new_dies']} 例死亡，";
 $key = key($reports[0]['city']);
 $message .= "{$key} {$reports[0]['city'][$key]['dies']} 例、";
