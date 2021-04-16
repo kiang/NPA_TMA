@@ -33,8 +33,8 @@
 		<rect x="800" y="385.6" class="st7" width="880" height="336.8" />
 		<g>
 			<text transform="matrix(1 0 0 1 830 519.593)" class="st4 st8 st9">受傷</text>
-			<text transform="matrix(1 0 0 1 1130 521.5084)" class="st4 st10 st11">8362</text>
-			<text transform="matrix(1 0 0 1 1130 651.7274)" class="st4 st10 st11">6206</text>
+			<text transform="matrix(1 0 0 1 1130 521.5084)" class="st4 st10 st11">8793</text>
+			<text transform="matrix(1 0 0 1 1130 651.7274)" class="st4 st10 st11">6533</text>
 			<text transform="matrix(1 0 0 1 830 649.4965)" class="st4 st8 st9">事故</text>
 		</g>
 	</g>
@@ -45,7 +45,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 200 233.9079)" class="st0 st10 st13">累計事故</text>
 				<g>
-					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">49823</text>
+					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">50503</text>
 				</g>
 			</g>
 		</g>
@@ -63,7 +63,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 1280 233.908)" class="st0 st10 st13">累計受傷</text>
 				<g>
-					<text transform="matrix(1 0 0 1 1190 330.2122)" class="st0 st5 st14">66502</text>
+					<text transform="matrix(1 0 0 1 1190 330.2122)" class="st0 st5 st14">67402</text>
 				</g>
 			</g>
 		</g>
@@ -75,7 +75,7 @@
 		<tspan x="150.6" y="0" class="st18 st10 st16 st17"> 694 事故， 10 死亡、 989 受傷</tspan>
 		
 		<tspan x="0" y="70" class="st4 st10 st16 st17">屏東縣</tspan>
-		<tspan x="150.6" y="70" class="st18 st10 st16 st17"> 382 事故， 6 死亡、 557 受傷</tspan>
+		<tspan x="150.6" y="70" class="st18 st10 st16 st17"> 383 事故， 6 死亡、 558 受傷</tspan>
 		
 		<tspan x="0" y="140" class="st4 st10 st16 st17">彰化縣</tspan>
 		<tspan x="150.6" y="140" class="st18 st10 st16 st17"> 489 事故， 5 死亡、 647 受傷</tspan>
@@ -87,7 +87,7 @@
 		<tspan x="150.6" y="280" class="st18 st10 st16 st17"> 361 事故， 3 死亡、 468 受傷</tspan>
 		
 		<tspan x="0" y="350" class="st4 st10 st16 st17">臺南市</tspan>
-		<tspan x="150.6" y="350" class="st18 st10 st16 st17"> 683 事故， 3 死亡、 913 受傷</tspan>
+		<tspan x="150.6" y="350" class="st18 st10 st16 st17"> 771 事故， 3 死亡、 1035 受傷</tspan>
 		
 		<tspan x="0" y="420" class="st4 st10 st16 st17">臺中市</tspan>
 		<tspan x="150.6" y="420" class="st18 st10 st16 st17"> 732 事故， 3 死亡、 1005 受傷</tspan>
@@ -102,13 +102,13 @@
 		<tspan x="150.6" y="630" class="st18 st10 st16 st17"> 180 事故， 2 死亡、 254 受傷</tspan>
 		
 		<tspan x="0" y="700" class="st4 st10 st16 st17">新竹縣</tspan>
-		<tspan x="150.6" y="700" class="st18 st10 st16 st17"> 175 事故， 1 死亡、 233 受傷</tspan>
+		<tspan x="150.6" y="700" class="st18 st10 st16 st17"> 177 事故， 1 死亡、 236 受傷</tspan>
 		
 		<tspan x="0" y="770" class="st4 st10 st16 st17">新竹市</tspan>
-		<tspan x="150.6" y="770" class="st18 st10 st16 st17"> 170 事故， 1 死亡、 215 受傷</tspan>
+		<tspan x="150.6" y="770" class="st18 st10 st16 st17"> 171 事故， 1 死亡、 217 受傷</tspan>
 		
 		<tspan x="0" y="840" class="st4 st10 st16 st17">雲林縣</tspan>
-		<tspan x="150.6" y="840" class="st18 st10 st16 st17"> 154 事故， 1 死亡、 205 受傷</tspan>
+		<tspan x="150.6" y="840" class="st18 st10 st16 st17"> 216 事故， 1 死亡、 282 受傷</tspan>
 		
 		<tspan x="0" y="910" class="st4 st10 st16 st17">新北市</tspan>
 		<tspan x="150.6" y="910" class="st18 st10 st16 st17"> 726 事故， 1 死亡、 966 受傷</tspan>
@@ -117,10 +117,10 @@
 		<tspan x="150.6" y="980" class="st18 st10 st16 st17"> 80 事故， 1 死亡、 98 受傷</tspan>
 		
 		<tspan x="0" y="1050" class="st4 st10 st16 st17">宜蘭縣</tspan>
-		<tspan x="150.6" y="1050" class="st18 st10 st16 st17"> 2 事故， 1 死亡、 2 受傷</tspan>
+		<tspan x="150.6" y="1050" class="st18 st10 st16 st17"> 174 事故， 1 死亡、 227 受傷</tspan>
 		
 		<tspan x="0" y="1120" class="st4 st10 st16 st17">苗栗縣</tspan>
-		<tspan x="150.6" y="1120" class="st18 st10 st16 st17"> 139 事故， 0 死亡、 193 受傷</tspan>
+		<tspan x="150.6" y="1120" class="st18 st10 st16 st17"> 140 事故， 0 死亡、 194 受傷</tspan>
 		
 		<tspan x="0" y="1190" class="st4 st10 st16 st17">基隆市</tspan>
 		<tspan x="150.6" y="1190" class="st18 st10 st16 st17"> 64 事故， 0 死亡、 81 受傷</tspan>
