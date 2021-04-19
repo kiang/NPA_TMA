@@ -119,7 +119,6 @@ function cmp($a, $b)
 }
 
 foreach ($ywPool as $yw) {
-    $nextMonday = strtotime('next monday', $counter[$yw]['time']);
     foreach ($counter as $subYw => $data) {
         if ($subYw < $yw) {
             $counter[$yw]['sum_accidents'] += $data['accidents'];
@@ -132,8 +131,8 @@ foreach ($ywPool as $yw) {
     $counter[$yw]['sum_hurts'] += $counter[$yw]['hurts'];
 
     $report = file_get_contents($basePath . '/art/base.svg');
-    $thisMonday = strtotime('last monday', $counter[$yw]['time']);
     $nextMonday = strtotime('next monday', $counter[$yw]['time']) - 1;
+    $thisMonday = strtotime('last monday', $nextMonday);
     $report = strtr($report, [
         '{{report_date}}' => date('Y', $thisMonday) . ' | ' . date('m-d', $thisMonday) . ' ~ ' . date('m-d', $nextMonday),
         '{{new_dies}}' => $counter[$yw]['dies'],
