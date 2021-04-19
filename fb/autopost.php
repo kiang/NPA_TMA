@@ -37,10 +37,14 @@ $key = key($reports[0]['city']);
 $message .= "{$key} {$reports[0]['city'][$key]['dies']} 例、";
 next($reports[0]['city']);
 $key = key($reports[0]['city']);
-$message .= "{$key} {$reports[0]['city'][$key]['dies']} 例、";
+if(!empty($key)) {
+    $message .= "{$key} {$reports[0]['city'][$key]['dies']} 例、";
+}
 next($reports[0]['city']);
 $key = key($reports[0]['city']);
-$message .= "{$key} {$reports[0]['city'][$key]['dies']} 例❗";
+if(!empty($key)) {
+    $message .= "{$key} {$reports[0]['city'][$key]['dies']} 例❗";
+}
 
 $message .= "\n⭐全部報表 - https://github.com/kiang/NPA_TMA/tree/master/report/";
 $message .= "\n⭐地圖 - https://kiang.github.io/NPA_TMA/";
