@@ -33,8 +33,8 @@
 		<rect x="650" y="385.6" class="st7" width="800" height="336.8" />
 		<g>
 			<text transform="matrix(1 0 0 1 700 519.593)" class="st4 st8 st9">受傷</text>
-			<text transform="matrix(1 0 0 1 1000 521.5084)" class="st4 st10 st11">2416</text>
-			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">1812</text>
+			<text transform="matrix(1 0 0 1 1000 521.5084)" class="st4 st10 st11">5967</text>
+			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">4448</text>
 			<text transform="matrix(1 0 0 1 700 649.4965)" class="st4 st8 st9">事故</text>
 		</g>
 	</g>
@@ -45,7 +45,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 200 233.9079)" class="st0 st10 st13">累計事故</text>
 				<g>
-					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">84609</text>
+					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">95849</text>
 				</g>
 			</g>
 		</g>
@@ -63,7 +63,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 1160 233.908)" class="st0 st10 st13">累計受傷</text>
 				<g>
-					<text transform="matrix(1 0 0 1 1070 330.2122)" class="st0 st5 st14">113440</text>
+					<text transform="matrix(1 0 0 1 1070 330.2122)" class="st0 st5 st14">128468</text>
 				</g>
 			</g>
 		</g>
@@ -72,40 +72,40 @@
 	<text transform="matrix(1 0 0 1 90.5591 810.7965)">
 		
 		<tspan x="0" y="0" class="st4 st10 st16 st17">機車</tspan>
-		<tspan x="600" y="0" class="st18 st10 st16 st17"> 1022 事故， 12 死亡、 1491 受傷</tspan>
+		<tspan x="600" y="0" class="st18 st10 st16 st17"> 2495 事故， 12 死亡、 3610 受傷</tspan>
 		
 		<tspan x="0" y="70" class="st4 st10 st16 st17">小客車</tspan>
-		<tspan x="600" y="70" class="st18 st10 st16 st17"> 575 事故， 6 死亡、 648 受傷</tspan>
+		<tspan x="600" y="70" class="st18 st10 st16 st17"> 1382 事故， 6 死亡、 1626 受傷</tspan>
 		
 		<tspan x="0" y="140" class="st4 st10 st16 st17">慢車</tspan>
-		<tspan x="600" y="140" class="st18 st10 st16 st17"> 58 事故， 2 死亡、 75 受傷</tspan>
+		<tspan x="600" y="140" class="st18 st10 st16 st17"> 172 事故， 2 死亡、 225 受傷</tspan>
 		
 		<tspan x="0" y="210" class="st4 st10 st16 st17">大貨車</tspan>
-		<tspan x="600" y="210" class="st18 st10 st16 st17"> 14 事故， 2 死亡、 18 受傷</tspan>
+		<tspan x="600" y="210" class="st18 st10 st16 st17"> 37 事故， 2 死亡、 47 受傷</tspan>
 		
 		<tspan x="0" y="280" class="st4 st10 st16 st17">人</tspan>
-		<tspan x="600" y="280" class="st18 st10 st16 st17"> 25 事故， 0 死亡、 37 受傷</tspan>
+		<tspan x="600" y="280" class="st18 st10 st16 st17"> 60 事故， 0 死亡、 93 受傷</tspan>
 		
 		<tspan x="0" y="350" class="st4 st10 st16 st17">小貨車(含客、貨兩用)</tspan>
-		<tspan x="600" y="350" class="st18 st10 st16 st17"> 95 事故， 0 死亡、 112 受傷</tspan>
+		<tspan x="600" y="350" class="st18 st10 st16 st17"> 257 事故， 0 死亡、 298 受傷</tspan>
 		
-		<tspan x="0" y="420" class="st4 st10 st16 st17">大客車</tspan>
-		<tspan x="600" y="420" class="st18 st10 st16 st17"> 11 事故， 0 死亡、 12 受傷</tspan>
+		<tspan x="0" y="420" class="st4 st10 st16 st17">曳引車</tspan>
+		<tspan x="600" y="420" class="st18 st10 st16 st17"> 10 事故， 0 死亡、 16 受傷</tspan>
 		
-		<tspan x="0" y="490" class="st4 st10 st16 st17">曳引車</tspan>
-		<tspan x="600" y="490" class="st18 st10 st16 st17"> 3 事故， 0 死亡、 3 受傷</tspan>
+		<tspan x="0" y="490" class="st4 st10 st16 st17">大客車</tspan>
+		<tspan x="600" y="490" class="st18 st10 st16 st17"> 16 事故， 0 死亡、 17 受傷</tspan>
 		
 		<tspan x="0" y="560" class="st4 st10 st16 st17">其他車</tspan>
-		<tspan x="600" y="560" class="st18 st10 st16 st17"> 3 事故， 0 死亡、 6 受傷</tspan>
+		<tspan x="600" y="560" class="st18 st10 st16 st17"> 8 事故， 0 死亡、 12 受傷</tspan>
 		
 		<tspan x="0" y="630" class="st4 st10 st16 st17">半聯結車</tspan>
-		<tspan x="600" y="630" class="st18 st10 st16 st17"> 4 事故， 0 死亡、 9 受傷</tspan>
+		<tspan x="600" y="630" class="st18 st10 st16 st17"> 8 事故， 0 死亡、 17 受傷</tspan>
 		
 		<tspan x="0" y="700" class="st4 st10 st16 st17">全聯結車</tspan>
 		<tspan x="600" y="700" class="st18 st10 st16 st17"> 1 事故， 0 死亡、 1 受傷</tspan>
 		
 		<tspan x="0" y="770" class="st4 st10 st16 st17">特種車</tspan>
-		<tspan x="600" y="770" class="st18 st10 st16 st17"> 1 事故， 0 死亡、 4 受傷</tspan>
+		<tspan x="600" y="770" class="st18 st10 st16 st17"> 2 事故， 0 死亡、 5 受傷</tspan>
 			</text>
 	<text transform="matrix(1 0 0 1 100 119.2712)" class="st18 st8 st20">國內交通事故通報  |  2021 | 03-29 ~ 04-04</text>
 </svg>
