@@ -33,8 +33,8 @@
 		<rect x="650" y="385.6" class="st7" width="800" height="336.8" />
 		<g>
 			<text transform="matrix(1 0 0 1 700 519.593)" class="st4 st8 st9">受傷</text>
-			<text transform="matrix(1 0 0 1 1000 521.5084)" class="st4 st10 st11">10898</text>
-			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">8200</text>
+			<text transform="matrix(1 0 0 1 1000 521.5084)" class="st4 st10 st11">10900</text>
+			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">8201</text>
 			<text transform="matrix(1 0 0 1 700 649.4965)" class="st4 st8 st9">事故</text>
 		</g>
 	</g>
@@ -45,7 +45,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 200 233.9079)" class="st0 st10 st13">累計事故</text>
 				<g>
-					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">28547</text>
+					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">28548</text>
 				</g>
 			</g>
 		</g>
@@ -63,7 +63,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 1160 233.908)" class="st0 st10 st13">累計受傷</text>
 				<g>
-					<text transform="matrix(1 0 0 1 1070 330.2122)" class="st0 st5 st14">37823</text>
+					<text transform="matrix(1 0 0 1 1070 330.2122)" class="st0 st5 st14">37825</text>
 				</g>
 			</g>
 		</g>
@@ -75,7 +75,7 @@
 		<tspan x="600" y="0" class="st18 st10 st16 st17"> 4581 事故， 20 死亡、 6613 受傷</tspan>
 		
 		<tspan x="0" y="70" class="st4 st10 st16 st17">小貨車(含客、貨兩用)</tspan>
-		<tspan x="600" y="70" class="st18 st10 st16 st17"> 460 事故， 7 死亡、 520 受傷</tspan>
+		<tspan x="600" y="70" class="st18 st10 st16 st17"> 461 事故， 7 死亡、 522 受傷</tspan>
 		
 		<tspan x="0" y="140" class="st4 st10 st16 st17">小客車</tspan>
 		<tspan x="600" y="140" class="st18 st10 st16 st17"> 2624 事故， 7 死亡、 3027 受傷</tspan>
