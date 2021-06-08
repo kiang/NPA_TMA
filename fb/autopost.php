@@ -85,7 +85,7 @@ foreach($reports AS $k => $report) {
     exec('inkscape -w 1080 -h 1350 -z ' . $report['svg'] . ' -e ' . $imgFile);
 
     try {
-        $response = $fb->post('/me/photos', [
+        $response = $fb->post('/' . $config['page_id'] . '/photos', [
             'message' => $photoMessage,
             'source' => $fb->fileToUpload($imgFile),
             'published' => false,
@@ -107,7 +107,7 @@ $linkData = [
 ];
 
 try {
-    $response = $fb->post('/me/feed', $linkData, $config['token']);
+    $response = $fb->post('/' . $config['page_id'] . '/feed', $linkData, $config['token']);
 } catch (Facebook\Exceptions\FacebookResponseException $e) {
     echo 'Graph returned an error: ' . $e->getMessage();
     exit;
