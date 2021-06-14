@@ -27,14 +27,14 @@
 	<rect class="st0" width="1840" height="2300" />
 	<text transform="matrix(1 0 0 1 94.5001 449.017)" class="st1 st2 st3">新增死亡</text>
 	<g>
-		<text transform="matrix(1 0 0 1 150 698.1412)" class="st4 st5 st6">40</text>
+		<text transform="matrix(1 0 0 1 150 698.1412)" class="st4 st5 st6">42</text>
 	</g>
 	<g>
 		<rect x="800" y="385.6" class="st7" width="880" height="336.8" />
 		<g>
 			<text transform="matrix(1 0 0 1 830 519.593)" class="st4 st8 st9">受傷</text>
-			<text transform="matrix(1 0 0 1 1130 521.5084)" class="st4 st10 st11">4166</text>
-			<text transform="matrix(1 0 0 1 1130 651.7274)" class="st4 st10 st11">3097</text>
+			<text transform="matrix(1 0 0 1 1130 521.5084)" class="st4 st10 st11">4167</text>
+			<text transform="matrix(1 0 0 1 1130 651.7274)" class="st4 st10 st11">3099</text>
 			<text transform="matrix(1 0 0 1 830 649.4965)" class="st4 st8 st9">事故</text>
 		</g>
 	</g>
@@ -45,7 +45,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 200 233.9079)" class="st0 st10 st13">累計事故</text>
 				<g>
-					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">128543</text>
+					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">128545</text>
 				</g>
 			</g>
 		</g>
@@ -54,7 +54,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 740 233.908)" class="st0 st10 st13">累計死亡</text>
 				<g>
-					<text transform="matrix(1 0 0 1 650 330.2122)" class="st0 st5 st14">700</text>
+					<text transform="matrix(1 0 0 1 650 330.2122)" class="st0 st5 st14">702</text>
 				</g>
 			</g>
 		</g>
@@ -63,7 +63,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 1280 233.908)" class="st0 st10 st13">累計受傷</text>
 				<g>
-					<text transform="matrix(1 0 0 1 1190 330.2122)" class="st0 st5 st14">172736</text>
+					<text transform="matrix(1 0 0 1 1190 330.2122)" class="st0 st5 st14">172737</text>
 				</g>
 			</g>
 		</g>
@@ -71,11 +71,11 @@
 	<rect x="90.6" y="772.1" class="st15" width="1141.8" height="314.8" />
 	<text transform="matrix(1 0 0 1 90.5591 810.7965)">
 		
-		<tspan x="0" y="0" class="st4 st10 st16 st17">桃園市</tspan>
-		<tspan x="150.6" y="0" class="st18 st10 st16 st17"> 191 事故， 5 死亡、 245 受傷</tspan>
+		<tspan x="0" y="0" class="st4 st10 st16 st17">臺南市</tspan>
+		<tspan x="150.6" y="0" class="st18 st10 st16 st17"> 161 事故， 7 死亡、 212 受傷</tspan>
 		
-		<tspan x="0" y="70" class="st4 st10 st16 st17">臺南市</tspan>
-		<tspan x="150.6" y="70" class="st18 st10 st16 st17"> 159 事故， 5 死亡、 211 受傷</tspan>
+		<tspan x="0" y="70" class="st4 st10 st16 st17">桃園市</tspan>
+		<tspan x="150.6" y="70" class="st18 st10 st16 st17"> 191 事故， 5 死亡、 245 受傷</tspan>
 		
 		<tspan x="0" y="140" class="st4 st10 st16 st17">南投縣</tspan>
 		<tspan x="150.6" y="140" class="st18 st10 st16 st17"> 153 事故， 4 死亡、 196 受傷</tspan>
