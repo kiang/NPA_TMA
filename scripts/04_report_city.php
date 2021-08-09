@@ -9,10 +9,9 @@ if(file_exists($roadsaftyFile)) {
     foreach($json AS $item) {
         $baseCount += $item['value'];
     }
+    $countFh = fopen($basePath . '/data/meta.csv', 'w');
+    fputcsv($countFh, ['before', $baseCount]);
 }
-
-$countFh = fopen($basePath . '/data/meta.csv', 'w');
-fputcsv($countFh, ['before', $baseCount]);
 
 $counter = $cityCounter = [];
 $a1 = fopen($basePath . '/data/a1.csv', 'r');
@@ -69,7 +68,9 @@ while ($line = fgetcsv($a1, 2048)) {
     ++$counter[$yw]['accidents'];
     ++$cityCounter[$yw][$city]['accidents'];
 }
-fputcsv($countFh, ['after', $baseCount]);
+if(isset($countFh)) {
+    fputcsv($countFh, ['after', $baseCount]);
+}
 
 $a2 = fopen($basePath . '/data/a2.csv', 'r');
 fgetcsv($a2, 2048);
