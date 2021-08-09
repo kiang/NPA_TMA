@@ -2,6 +2,18 @@
 
 $basePath = dirname(__DIR__);
 
+$roadsaftyFile = '/home/kiang/public_html/roadsafety.tw/raw/GetCitiesAreaAccDataStatistics/ALL/110_05.json';
+$baseCount = 0;
+if(file_exists($roadsaftyFile)) {
+    $json = json_decode(file_get_contents($roadsaftyFile), true);
+    foreach($json AS $item) {
+        $baseCount += $item['value'];
+    }
+}
+
+$countFh = fopen($basePath . '/data/meta.csv', 'w');
+fputcsv($countFh, ['before', $baseCount]);
+
 $counter = $cityCounter = [];
 $a1 = fopen($basePath . '/data/a1.csv', 'r');
 fgetcsv($a1, 2048);
@@ -44,6 +56,9 @@ while ($line = fgetcsv($a1, 2048)) {
             case '死亡':
                 $counter[$yw]['dies'] += $d[1];
                 $cityCounter[$yw][$city]['dies'] += $d[1];
+                if(date('n', $line[6]) > 5) {
+                    $baseCount += $d[1];
+                }
                 break;
             case '受傷':
                 $counter[$yw]['hurts'] += $d[1];
@@ -54,6 +69,7 @@ while ($line = fgetcsv($a1, 2048)) {
     ++$counter[$yw]['accidents'];
     ++$cityCounter[$yw][$city]['accidents'];
 }
+fputcsv($countFh, ['after', $baseCount]);
 
 $a2 = fopen($basePath . '/data/a2.csv', 'r');
 fgetcsv($a2, 2048);
