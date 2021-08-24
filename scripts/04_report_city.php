@@ -2,7 +2,7 @@
 
 $basePath = dirname(__DIR__);
 
-$roadsaftyFile = '/home/kiang/public_html/roadsafety.tw/raw/GetCitiesAreaAccDataStatistics/ALL/110_05.json';
+$roadsaftyFile = '/home/kiang/public_html/roadsafety.tw/raw/GetCitiesAreaAccDataStatistics/ALL/110_06.json';
 $baseCount = 0;
 if(file_exists($roadsaftyFile)) {
     $json = json_decode(file_get_contents($roadsaftyFile), true);
