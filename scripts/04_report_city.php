@@ -55,7 +55,7 @@ while ($line = fgetcsv($a1, 2048)) {
             case '死亡':
                 $counter[$yw]['dies'] += $d[1];
                 $cityCounter[$yw][$city]['dies'] += $d[1];
-                if(date('n', $line[6]) > 5) {
+                if(date('n', $line[6]) > 6) {
                     $baseCount += $d[1];
                 }
                 break;
