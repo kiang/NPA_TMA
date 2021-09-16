@@ -33,7 +33,7 @@
 		<rect x="800" y="385.6" class="st7" width="880" height="336.8" />
 		<g>
 			<text transform="matrix(1 0 0 1 830 519.593)" class="st4 st8 st9">受傷</text>
-			<text transform="matrix(1 0 0 1 1130 521.5084)" class="st4 st10 st11">8783</text>
+			<text transform="matrix(1 0 0 1 1130 521.5084)" class="st4 st10 st11">8785</text>
 			<text transform="matrix(1 0 0 1 1130 651.7274)" class="st4 st10 st11">6566</text>
 			<text transform="matrix(1 0 0 1 830 649.4965)" class="st4 st8 st9">事故</text>
 		</g>
@@ -63,7 +63,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 1280 233.908)" class="st0 st10 st13">累計受傷</text>
 				<g>
-					<text transform="matrix(1 0 0 1 1190 330.2122)" class="st0 st5 st14">95193</text>
+					<text transform="matrix(1 0 0 1 1190 330.2122)" class="st0 st5 st14">95195</text>
 				</g>
 			</g>
 		</g>
@@ -120,7 +120,7 @@
 		<tspan x="150.6" y="1050" class="st18 st10 st16 st17"> 185 事故， 1 死亡、 261 受傷</tspan>
 		
 		<tspan x="0" y="1120" class="st4 st10 st16 st17">新竹市</tspan>
-		<tspan x="150.6" y="1120" class="st18 st10 st16 st17"> 181 事故， 0 死亡、 245 受傷</tspan>
+		<tspan x="150.6" y="1120" class="st18 st10 st16 st17"> 181 事故， 0 死亡、 247 受傷</tspan>
 		
 		<tspan x="0" y="1190" class="st4 st10 st16 st17">基隆市</tspan>
 		<tspan x="150.6" y="1190" class="st18 st10 st16 st17"> 76 事故， 0 死亡、 104 受傷</tspan>
