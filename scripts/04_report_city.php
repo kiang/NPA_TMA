@@ -2,7 +2,7 @@
 
 $basePath = dirname(__DIR__);
 
-$roadsaftyFile = '/home/kiang/public_html/roadsafety.tw/raw/GetCitiesAreaAccDataStatistics/ALL/110_06.json';
+$roadsaftyFile = '/home/kiang/public_html/roadsafety.tw/raw/GetCitiesAreaAccDataStatistics/ALL/110_07.json';
 $baseCount = 0;
 if(file_exists($roadsaftyFile)) {
     $json = json_decode(file_get_contents($roadsaftyFile), true);
@@ -55,7 +55,7 @@ while ($line = fgetcsv($a1, 2048)) {
             case '死亡':
                 $counter[$yw]['dies'] += $d[1];
                 $cityCounter[$yw][$city]['dies'] += $d[1];
-                if(date('n', $line[6]) > 6) {
+                if(date('n', $line[6]) > 7) {
                     $baseCount += $d[1];
                 }
                 break;
