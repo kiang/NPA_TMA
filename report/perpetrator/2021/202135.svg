@@ -27,14 +27,14 @@
 	<rect class="st0" width="1626" height="2300" />
 	<text transform="matrix(1 0 0 1 94.5001 449.017)" class="st1 st2 st3">新增死亡</text>
 	<g>
-		<text transform="matrix(1 0 0 1 150 698.1412)" class="st4 st5 st6">25</text>
+		<text transform="matrix(1 0 0 1 150 698.1412)" class="st4 st5 st6">26</text>
 	</g>
 	<g>
 		<rect x="650" y="385.6" class="st7" width="800" height="336.8" />
 		<g>
 			<text transform="matrix(1 0 0 1 700 519.593)" class="st4 st8 st9">受傷</text>
 			<text transform="matrix(1 0 0 1 1000 521.5084)" class="st4 st10 st11">5372</text>
-			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">4069</text>
+			<text transform="matrix(1 0 0 1 1000 651.7274)" class="st4 st10 st11">4070</text>
 			<text transform="matrix(1 0 0 1 700 649.4965)" class="st4 st8 st9">事故</text>
 		</g>
 	</g>
@@ -81,7 +81,7 @@
 		<tspan x="600" y="140" class="st18 st10 st16 st17"> 235 事故， 3 死亡、 265 受傷</tspan>
 		
 		<tspan x="0" y="210" class="st4 st10 st16 st17">大貨車</tspan>
-		<tspan x="600" y="210" class="st18 st10 st16 st17"> 40 事故， 1 死亡、 49 受傷</tspan>
+		<tspan x="600" y="210" class="st18 st10 st16 st17"> 41 事故， 2 死亡、 49 受傷</tspan>
 		
 		<tspan x="0" y="280" class="st4 st10 st16 st17">人</tspan>
 		<tspan x="600" y="280" class="st18 st10 st16 st17"> 49 事故， 1 死亡、 79 受傷</tspan>
