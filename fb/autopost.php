@@ -82,8 +82,8 @@ foreach($reports AS $k => $report) {
     if(file_exists($imgFile)) {
         unlink($imgFile);
     }
-    exec('inkscape -w 1080 -h 1350 -z ' . $report['svg'] . ' -e ' . $imgFile);
-
+    exec('inkscape -w 1080 -h 1350 -z --export-filename=' . $imgFile . ' ' . $report['svg']);
+    
     try {
         $response = $fb->post('/' . $config['page_id'] . '/photos', [
             'message' => $photoMessage,
