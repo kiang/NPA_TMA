@@ -58,7 +58,7 @@ $message .= " 新增 {$reports[3]['new_dies']} 例死亡、 {$reports[3]['new_hu
 $message .= "\n✏" . date('m-d', $reports[4]['timeBegin']) . ' ~ ' . date('m-d', $reports[4]['timeEnd']);
 $message .= " 新增 {$reports[4]['new_dies']} 例死亡、 {$reports[4]['new_hurts']} 例受傷與 {$reports[4]['new_accidents']} 起事故";
 $message .= "\n⭐結算日期 - " . date('Y-m-d');
-$message .= "\n\n#交通安全最前線 #謝謝辛苦的警察人員";
+$message .= "\n\n* 本通報彙整內政部警政署 A1, A2 事故資料";
 
 $imgPath = $basePath . '/fb/tmp';
 if(!file_exists($imgPath)) {
