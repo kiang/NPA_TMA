@@ -33,8 +33,8 @@
 		<rect x="800" y="385.6" class="st7" width="880" height="336.8" />
 		<g>
 			<text transform="matrix(1 0 0 1 830 519.593)" class="st4 st8 st9">受傷</text>
-			<text transform="matrix(1 0 0 1 1130 521.5084)" class="st4 st10 st11">9317</text>
-			<text transform="matrix(1 0 0 1 1130 651.7274)" class="st4 st10 st11">7039</text>
+			<text transform="matrix(1 0 0 1 1130 521.5084)" class="st4 st10 st11">9319</text>
+			<text transform="matrix(1 0 0 1 1130 651.7274)" class="st4 st10 st11">7041</text>
 			<text transform="matrix(1 0 0 1 830 649.4965)" class="st4 st8 st9">事故</text>
 		</g>
 	</g>
@@ -45,7 +45,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 200 233.9079)" class="st0 st10 st13">累計事故</text>
 				<g>
-					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">280928</text>
+					<text transform="matrix(1 0 0 1 110 330.2121)" class="st0 st5 st14">280931</text>
 				</g>
 			</g>
 		</g>
@@ -63,7 +63,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 1280 233.908)" class="st0 st10 st13">累計受傷</text>
 				<g>
-					<text transform="matrix(1 0 0 1 1190 330.2122)" class="st0 st5 st14">373834</text>
+					<text transform="matrix(1 0 0 1 1190 330.2122)" class="st0 st5 st14">373837</text>
 				</g>
 			</g>
 		</g>
@@ -93,7 +93,7 @@
 		<tspan x="150.6" y="420" class="st18 st10 st16 st17"> 907 事故， 2 死亡、 1170 受傷</tspan>
 		
 		<tspan x="0" y="490" class="st4 st10 st16 st17">宜蘭縣</tspan>
-		<tspan x="150.6" y="490" class="st18 st10 st16 st17"> 133 事故， 1 死亡、 165 受傷</tspan>
+		<tspan x="150.6" y="490" class="st18 st10 st16 st17"> 134 事故， 1 死亡、 166 受傷</tspan>
 		
 		<tspan x="0" y="560" class="st4 st10 st16 st17">桃園市</tspan>
 		<tspan x="150.6" y="560" class="st18 st10 st16 st17"> 907 事故， 1 死亡、 1139 受傷</tspan>
@@ -120,7 +120,7 @@
 		<tspan x="150.6" y="1050" class="st18 st10 st16 st17"> 63 事故， 0 死亡、 93 受傷</tspan>
 		
 		<tspan x="0" y="1120" class="st4 st10 st16 st17">新竹縣</tspan>
-		<tspan x="150.6" y="1120" class="st18 st10 st16 st17"> 202 事故， 0 死亡、 260 受傷</tspan>
+		<tspan x="150.6" y="1120" class="st18 st10 st16 st17"> 203 事故， 0 死亡、 261 受傷</tspan>
 		
 		<tspan x="0" y="1190" class="st4 st10 st16 st17">新竹市</tspan>
 		<tspan x="150.6" y="1190" class="st18 st10 st16 st17"> 196 事故， 0 死亡、 255 受傷</tspan>
