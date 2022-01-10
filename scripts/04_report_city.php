@@ -1,6 +1,7 @@
 <?php
 
 $basePath = dirname(__DIR__);
+$y = date('o');
 
 $roadsaftyFile = '/home/kiang/public_html/roadsafety.tw/raw/GetCitiesAreaAccDataStatistics/ALL/110_10.json';
 $baseCount = 0;
@@ -9,12 +10,12 @@ if(file_exists($roadsaftyFile)) {
     foreach($json AS $item) {
         $baseCount += $item['value'];
     }
-    $countFh = fopen($basePath . '/data/meta.csv', 'w');
+    $countFh = fopen($basePath . '/data/' . $y . '/meta.csv', 'w');
     fputcsv($countFh, ['before', $baseCount]);
 }
 
 $counter = $cityCounter = [];
-$a1 = fopen($basePath . '/data/a1.csv', 'r');
+$a1 = fopen($basePath . '/data/' . $y . '/a1.csv', 'r');
 fgetcsv($a1, 2048);
 while ($line = fgetcsv($a1, 2048)) {
     $yw = date('oW', $line[6]);
@@ -72,7 +73,7 @@ if(isset($countFh)) {
     fputcsv($countFh, ['after', $baseCount]);
 }
 
-$a2 = fopen($basePath . '/data/a2.csv', 'r');
+$a2 = fopen($basePath . '/data/' . $y . '/a2.csv', 'r');
 fgetcsv($a2, 2048);
 while ($line = fgetcsv($a2, 2048)) {
     $yw = date('oW', $line[6]);

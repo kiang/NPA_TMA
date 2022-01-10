@@ -1,6 +1,7 @@
 <?php
 
 $basePath = dirname(__DIR__);
+$y = date('o');
 
 function cmp($a, $b)
 {
@@ -11,7 +12,7 @@ function cmp($a, $b)
 }
 
 $counter = $perpetrator = [];
-$a1 = fopen($basePath . '/data/a1.csv', 'r');
+$a1 = fopen($basePath . '/data/' . $y . '/a1.csv', 'r');
 fgetcsv($a1, 2048);
 while ($line = fgetcsv($a1, 2048)) {
     $yw = date('oW', $line[6]);
@@ -61,7 +62,7 @@ while ($line = fgetcsv($a1, 2048)) {
     ++$perpetrator[$yw][$item]['accidents'];
 }
 
-$a2 = fopen($basePath . '/data/a2.csv', 'r');
+$a2 = fopen($basePath . '/data/' . $y . '/a2.csv', 'r');
 fgetcsv($a2, 2048);
 while ($line = fgetcsv($a2, 2048)) {
     $yw = date('oW', $line[6]);
