@@ -12,105 +12,109 @@ function cmp($a, $b)
 }
 
 $counter = $perpetrator = [];
-$a1 = fopen($basePath . '/data/' . $y . '/a1.csv', 'r');
-fgetcsv($a1, 2048);
-while ($line = fgetcsv($a1, 2048)) {
-    $yw = date('oW', $line[6]);
-    if (!isset($counter[$yw])) {
-        $counter[$yw] = [
-            'accidents' => 0,
-            'dies' => 0,
-            'hurts' => 0,
-            'sum_accidents' => 0,
-            'sum_dies' => 0,
-            'sum_hurts' => 0,
-            'time' => 0,
-        ];
-    }
-    if ($counter[$yw]['time'] < $line[6]) {
-        $counter[$yw]['time'] = $line[6];
-    }
-    if (!isset($perpetrator[$yw])) {
-        $perpetrator[$yw] = [];
-    }
-    $parts = explode(';', $line[3]);
-    $parts = explode('-', $parts[0]);
-    $item = array_pop($parts);
-    if (!isset($perpetrator[$yw][$item])) {
-        $perpetrator[$yw][$item] = [
-            'accidents' => 0,
-            'dies' => 0,
-            'hurts' => 0,
-        ];
-    }
-
-    $parts = explode(';', $line[2]);
-    foreach ($parts as $part) {
-        $d = preg_split('/([0-9]+)/', $part, -1, PREG_SPLIT_DELIM_CAPTURE);
-        switch ($d[0]) {
-            case '死亡':
-                $counter[$yw]['dies'] += $d[1];
-                $perpetrator[$yw][$item]['dies'] += $d[1];
-                break;
-            case '受傷':
-                $counter[$yw]['hurts'] += $d[1];
-                $perpetrator[$yw][$item]['hurts'] += $d[1];
-                break;
+foreach (glob($basePath . '/data/*/a1.csv') as $a1File) {
+    $a1 = fopen($a1File, 'r');
+    fgetcsv($a1, 2048);
+    while ($line = fgetcsv($a1, 2048)) {
+        $yw = date('oW', $line[6]);
+        if (!isset($counter[$yw])) {
+            $counter[$yw] = [
+                'accidents' => 0,
+                'dies' => 0,
+                'hurts' => 0,
+                'sum_accidents' => 0,
+                'sum_dies' => 0,
+                'sum_hurts' => 0,
+                'time' => 0,
+            ];
         }
+        if ($counter[$yw]['time'] < $line[6]) {
+            $counter[$yw]['time'] = $line[6];
+        }
+        if (!isset($perpetrator[$yw])) {
+            $perpetrator[$yw] = [];
+        }
+        $parts = explode(';', $line[3]);
+        $parts = explode('-', $parts[0]);
+        $item = array_pop($parts);
+        if (!isset($perpetrator[$yw][$item])) {
+            $perpetrator[$yw][$item] = [
+                'accidents' => 0,
+                'dies' => 0,
+                'hurts' => 0,
+            ];
+        }
+
+        $parts = explode(';', $line[2]);
+        foreach ($parts as $part) {
+            $d = preg_split('/([0-9]+)/', $part, -1, PREG_SPLIT_DELIM_CAPTURE);
+            switch ($d[0]) {
+                case '死亡':
+                    $counter[$yw]['dies'] += $d[1];
+                    $perpetrator[$yw][$item]['dies'] += $d[1];
+                    break;
+                case '受傷':
+                    $counter[$yw]['hurts'] += $d[1];
+                    $perpetrator[$yw][$item]['hurts'] += $d[1];
+                    break;
+            }
+        }
+        ++$counter[$yw]['accidents'];
+        ++$perpetrator[$yw][$item]['accidents'];
     }
-    ++$counter[$yw]['accidents'];
-    ++$perpetrator[$yw][$item]['accidents'];
 }
 
-$a2 = fopen($basePath . '/data/' . $y . '/a2.csv', 'r');
-fgetcsv($a2, 2048);
-while ($line = fgetcsv($a2, 2048)) {
-    $yw = date('oW', $line[6]);
-    if (!isset($counter[$yw])) {
-        $counter[$yw] = [
-            'accidents' => 0,
-            'dies' => 0,
-            'hurts' => 0,
-            'sum_accidents' => 0,
-            'sum_dies' => 0,
-            'sum_hurts' => 0,
-            'time' => 0,
-        ];
-    }
-    if ($counter[$yw]['time'] < $line[6]) {
-        $counter[$yw]['time'] = $line[6];
-    }
-
-    if (!isset($perpetrator[$yw])) {
-        $perpetrator[$yw] = [];
-    }
-    $parts = explode(';', $line[3]);
-    $parts = explode('-', $parts[0]);
-    $item = array_pop($parts);
-    if (!isset($perpetrator[$yw][$item])) {
-        $perpetrator[$yw][$item] = [
-            'accidents' => 0,
-            'dies' => 0,
-            'hurts' => 0,
-        ];
-    }
-
-    $parts = explode(';', $line[2]);
-    foreach ($parts as $part) {
-        $d = preg_split('/([0-9]+)/', $part, -1, PREG_SPLIT_DELIM_CAPTURE);
-        switch ($d[0]) {
-            case '死亡':
-                $counter[$yw]['dies'] += $d[1];
-                $perpetrator[$yw][$item]['dies'] += $d[1];
-                break;
-            case '受傷':
-                $counter[$yw]['hurts'] += $d[1];
-                $perpetrator[$yw][$item]['hurts'] += $d[1];
-                break;
+foreach (glob($basePath . '/data/*/a2.csv') as $a2File) {
+    $a2 = fopen($a2File, 'r');
+    fgetcsv($a2, 2048);
+    while ($line = fgetcsv($a2, 2048)) {
+        $yw = date('oW', $line[6]);
+        if (!isset($counter[$yw])) {
+            $counter[$yw] = [
+                'accidents' => 0,
+                'dies' => 0,
+                'hurts' => 0,
+                'sum_accidents' => 0,
+                'sum_dies' => 0,
+                'sum_hurts' => 0,
+                'time' => 0,
+            ];
         }
+        if ($counter[$yw]['time'] < $line[6]) {
+            $counter[$yw]['time'] = $line[6];
+        }
+
+        if (!isset($perpetrator[$yw])) {
+            $perpetrator[$yw] = [];
+        }
+        $parts = explode(';', $line[3]);
+        $parts = explode('-', $parts[0]);
+        $item = array_pop($parts);
+        if (!isset($perpetrator[$yw][$item])) {
+            $perpetrator[$yw][$item] = [
+                'accidents' => 0,
+                'dies' => 0,
+                'hurts' => 0,
+            ];
+        }
+
+        $parts = explode(';', $line[2]);
+        foreach ($parts as $part) {
+            $d = preg_split('/([0-9]+)/', $part, -1, PREG_SPLIT_DELIM_CAPTURE);
+            switch ($d[0]) {
+                case '死亡':
+                    $counter[$yw]['dies'] += $d[1];
+                    $perpetrator[$yw][$item]['dies'] += $d[1];
+                    break;
+                case '受傷':
+                    $counter[$yw]['hurts'] += $d[1];
+                    $perpetrator[$yw][$item]['hurts'] += $d[1];
+                    break;
+            }
+        }
+        ++$counter[$yw]['accidents'];
+        ++$perpetrator[$yw][$item]['accidents'];
     }
-    ++$counter[$yw]['accidents'];
-    ++$perpetrator[$yw][$item]['accidents'];
 }
 
 $ywPool = array_keys($counter);
@@ -146,7 +150,7 @@ foreach ($ywPool as $yw) {
     $cityTemplate = substr($report, $pos + 14, $posEnd - $pos - 14);
     $loopY = 0;
     $report = substr($report, 0, $pos);
-    
+
     uasort($perpetrator[$yw], 'cmp');
     foreach ($perpetrator[$yw] as $item => $data) {
         switch ($item) {
