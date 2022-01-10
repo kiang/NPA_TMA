@@ -120,9 +120,11 @@ foreach (glob($basePath . '/data/*/a2.csv') as $a2File) {
 $ywPool = array_keys($counter);
 
 foreach ($ywPool as $yw) {
+    $y1 = substr($yw, 0, 4);
     $nextMonday = strtotime('next monday', $counter[$yw]['time']);
     foreach ($counter as $subYw => $data) {
-        if ($subYw < $yw) {
+        $y2 = substr($subYw, 0, 4);
+        if ($y1 == $y2 && $subYw < $yw) {
             $counter[$yw]['sum_accidents'] += $data['accidents'];
             $counter[$yw]['sum_dies'] += $data['dies'];
             $counter[$yw]['sum_hurts'] += $data['hurts'];

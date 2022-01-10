@@ -142,8 +142,10 @@ function cmp($a, $b)
 }
 
 foreach ($ywPool as $yw) {
+    $y1 = substr($yw, 0, 4);
     foreach ($counter as $subYw => $data) {
-        if ($subYw < $yw) {
+        $y2 = substr($subYw, 0, 4);
+        if ($y1 == $y2 && $subYw < $yw) {
             $counter[$yw]['sum_accidents'] += $data['accidents'];
             $counter[$yw]['sum_dies'] += $data['dies'];
             $counter[$yw]['sum_hurts'] += $data['hurts'];
