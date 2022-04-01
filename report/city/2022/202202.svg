@@ -33,7 +33,7 @@
 		<rect x="800" y="385.6" class="st7" width="880" height="336.8" />
 		<g>
 			<text transform="matrix(1 0 0 1 830 519.593)" class="st4 st8 st9">受傷</text>
-			<text transform="matrix(1 0 0 1 1130 521.5084)" class="st4 st10 st11">10947</text>
+			<text transform="matrix(1 0 0 1 1130 521.5084)" class="st4 st10 st11">10946</text>
 			<text transform="matrix(1 0 0 1 1130 651.7274)" class="st4 st10 st11">8290</text>
 			<text transform="matrix(1 0 0 1 830 649.4965)" class="st4 st8 st9">事故</text>
 		</g>
@@ -63,7 +63,7 @@
 			<g>
 				<text transform="matrix(1 0 0 1 1280 233.908)" class="st0 st10 st13">累計受傷</text>
 				<g>
-					<text transform="matrix(1 0 0 1 1190 330.2122)" class="st0 st5 st14">21952</text>
+					<text transform="matrix(1 0 0 1 1190 330.2122)" class="st0 st5 st14">21951</text>
 				</g>
 			</g>
 		</g>
@@ -93,7 +93,7 @@
 		<tspan x="150.6" y="420" class="st18 st10 st16 st17"> 532 事故， 3 死亡、 690 受傷</tspan>
 		
 		<tspan x="0" y="490" class="st4 st10 st16 st17">高雄市</tspan>
-		<tspan x="150.6" y="490" class="st18 st10 st16 st17"> 1026 事故， 3 死亡、 1431 受傷</tspan>
+		<tspan x="150.6" y="490" class="st18 st10 st16 st17"> 1026 事故， 3 死亡、 1430 受傷</tspan>
 		
 		<tspan x="0" y="560" class="st4 st10 st16 st17">屏東縣</tspan>
 		<tspan x="150.6" y="560" class="st18 st10 st16 st17"> 337 事故， 2 死亡、 465 受傷</tspan>
