@@ -17,7 +17,7 @@ for ($i = 0; $i < $zip->numFiles; $i++) {
         $head = fgetcsv($fh, 4096);
         while ($line = fgetcsv($fh, 4096)) {
             $data = array_combine($head, $line);
-            if (empty($data['經度'])) {
+            if (empty($data['經度']) || $data['當事者順位'] != 1) {
                 continue;
             }
             $sql = "SELECT villcode FROM {$config['table']} AS cunli WHERE ST_Intersects('SRID=4326;POINT({$data['經度']} {$data['緯度']})'::geometry, cunli.geom)";
@@ -56,7 +56,7 @@ $fh = fopen($basePath . '/data/' . $currentYear . '/a1.csv', 'r');
 $head = fgetcsv($fh, 4096);
 while ($line = fgetcsv($fh, 4096)) {
     $data = array_combine($head, $line);
-    if (empty($data['經度'])) {
+    if (empty($data['經度']) || $data['當事者順位'] != 1) {
         continue;
     }
     $sql = "SELECT villcode FROM {$config['table']} AS cunli WHERE ST_Intersects('SRID=4326;POINT({$data['經度']} {$data['緯度']})'::geometry, cunli.geom)";
