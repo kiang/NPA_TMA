@@ -72,27 +72,26 @@ map.on('singleclick', function (evt) {
       firstPosDone = true;
       var p = feature.getProperties();
       currentFeature = feature;
-      if(lastFeature) {
-        if(lastFeatureType === 'point') {
+      if (lastFeature) {
+        if (lastFeatureType === 'point') {
           lastFeature.setStyle(pointStyle);
         } else {
           lastFeature.setStyle(cunliStyle);
         }
       }
-      
-      if (p.casualties) {
+
+      if (p.type) {
         appView.setCenter(feature.getGeometry().getCoordinates());
         appView.setZoom(15);
         var lonLat = ol.proj.toLonLat(p.geometry.getCoordinates());
         var message = '<table class="table table-dark">';
         message += '<tbody>';
-        message += '<tr><th scope="row" style="width: 100px;">類型</th><td>';
-        message += p.type;
-        message += '</td></tr>';
-        message += '<tr><th scope="row">發生時間</th><td>' + p.time + '</td></tr>';
-        message += '<tr><th scope="row">發生地點</th><td>' + p.location + '</td></tr>';
-        message += '<tr><th scope="row">死亡受傷人數</th><td>' + p.casualties + '</td></tr>';
-        message += '<tr><th scope="row">車種</th><td>' + p.units + '</td></tr>';
+        for (k in p) {
+          if (k !== 'geometry') {
+            message += '<tr><th scope="row">' + k + '</th><td>' + p[k] + '</td></tr>';
+          }
+        }
+
         message += '<tr><td colspan="2">';
         message += '<hr /><div class="btn-group-vertical" role="group" style="width: 100%;">';
         message += '<a href="https://www.google.com/maps/dir/?api=1&destination=' + lonLat[1] + ',' + lonLat[0] + '&travelmode=driving" target="_blank" class="btn btn-info btn-lg btn-block">Google 導航</a>';
@@ -103,7 +102,7 @@ map.on('singleclick', function (evt) {
         sidebarTitle.innerHTML = p.type;
         currentFeature.setStyle(pointStyle);
         lastFeatureType = 'point';
-      } else if(p.VILLCODE){
+      } else if (p.VILLCODE) {
         var message = '<table class="table table-dark">';
         message += '<tbody>';
         message += '<tr><th scope="row">A1 數量</th><td>' + cunliMeta[p.VILLCODE].a1 + '</td></tr>';
@@ -165,7 +164,7 @@ function cunliStyle(f) {
   var p = f.getProperties();
   var color = 'rgba(149,78,44,0.7)';
   var strokeWidth = 1;
-  if(f === currentFeature) {
+  if (f === currentFeature) {
     strokeWidth = 5;
   }
   if (cunliMeta[p.VILLCODE]) {
@@ -253,23 +252,29 @@ $.getJSON('data/cunli.json', {}, function (r) {
 });
 var pointFeatures = [];
 vectorPoints.setZIndex(100);
-$.get('data/a1.csv', {}, function (c) {
+var currentYear = new Date().getFullYear();
+$.get('data/' + currentYear + '/a1.csv', {}, function (c) {
   var lines = $.csv.toArrays(c);
+  var head = {};
   for (k in lines) {
     if (k > 0) {
-      var pointFeature = new ol.Feature({
-        geometry: new ol.geom.Point(
-          ol.proj.fromLonLat([parseFloat(lines[k][4]), parseFloat(lines[k][5])])
-        )
-      });
-      pointFeature.setProperties({
-        type: 'a1',
-        time: lines[k][0],
-        location: lines[k][1],
-        casualties: lines[k][2],
-        units: lines[k][3]
-      });
-      pointFeatures.push(pointFeature);
+      var longitude = parseFloat(lines[k][49]);
+      if (!Number.isNaN(longitude)) {
+        var pointFeature = new ol.Feature({
+          geometry: new ol.geom.Point(
+            ol.proj.fromLonLat([longitude, parseFloat(lines[k][50])])
+          )
+        });
+        var p = {};
+        p.type = 'a1';
+        for(lk in head) {
+          p[head[lk]] = lines[k][lk];
+        }
+        pointFeature.setProperties(p);
+        pointFeatures.push(pointFeature);
+      }
+    } else {
+      head = lines[k];
     }
   }
 }).then(function () {
