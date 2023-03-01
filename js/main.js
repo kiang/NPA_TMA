@@ -54,7 +54,7 @@ var baseLayer = new ol.layer.Tile({
     wrapX: true,
     attributions: '<a href="http://maps.nlsc.gov.tw/" target="_blank">國土測繪圖資服務雲</a>'
   }),
-  opacity: 0.8
+  opacity: 1
 });
 
 var map = new ol.Map({
@@ -79,12 +79,13 @@ map.on('singleclick', function (evt) {
           lastFeature.setStyle(cunliStyle);
         }
       }
+      var message = '';
 
       if (p.type) {
         appView.setCenter(feature.getGeometry().getCoordinates());
         appView.setZoom(15);
         var lonLat = ol.proj.toLonLat(p.geometry.getCoordinates());
-        var message = '<table class="table table-dark">';
+        message += '<table class="table table-dark">';
         message += '<tbody>';
         for (k in p) {
           if (k !== 'geometry') {
@@ -103,12 +104,16 @@ map.on('singleclick', function (evt) {
         currentFeature.setStyle(pointStyle);
         lastFeatureType = 'point';
       } else if (p.VILLCODE) {
-        var message = '<table class="table table-dark">';
-        message += '<tbody>';
-        message += '<tr><th scope="row">A1 數量</th><td>' + cunliMeta[p.VILLCODE].a1 + '</td></tr>';
-        message += '<tr><th scope="row">A2 數量</th><td>' + cunliMeta[p.VILLCODE].a2 + '</td></tr>';
-        message += '<tr><th scope="row">總數</th><td>' + cunliMeta[p.VILLCODE].total + '</td></tr>';
-        message += '</tbody></table>';
+        if (cunliMeta[p.VILLCODE]) {
+          message += '<table class="table table-dark">';
+          message += '<tbody>';
+          message += '<tr><th scope="row">A1 數量</th><td>' + cunliMeta[p.VILLCODE].a1 + '</td></tr>';
+          message += '<tr><th scope="row">A2 數量</th><td>' + cunliMeta[p.VILLCODE].a2 + '</td></tr>';
+          message += '<tr><th scope="row">總數</th><td>' + cunliMeta[p.VILLCODE].total + '</td></tr>';
+          message += '</tbody></table>';
+        } else {
+          message = '';
+        }
         sidebarTitle.innerHTML = p.COUNTYNAME + p.TOWNNAME + p.VILLNAME;
         currentFeature.setStyle(cunliStyle);
         lastFeatureType = 'cunli';
@@ -176,7 +181,11 @@ function cunliStyle(f) {
       color = 'rgba(104,55,31,0.7)';
     } else if (cunliMeta[p.VILLCODE].total > 5) {
       color = 'rgba(134,70,40,0.7)';
+    } else if (cunliMeta[p.VILLCODE].total > 0) {
+      color = 'rgba(164,85,40,0.7)';
     }
+  } else {
+    color = 'rgba(255,255,255,0)';
   }
   return new ol.style.Style({
     stroke: new ol.style.Stroke({
@@ -258,7 +267,7 @@ $.get('data/' + currentYear + '/a1.csv', {}, function (c) {
   var head = {};
   for (k in lines) {
     if (k > 0) {
-      if(lines[k][33] != 1) {
+      if (lines[k][33] != 1) {
         continue;
       }
       var longitude = parseFloat(lines[k][49]);
@@ -270,7 +279,7 @@ $.get('data/' + currentYear + '/a1.csv', {}, function (c) {
         });
         var p = {};
         p.type = 'a1';
-        for(lk in head) {
+        for (lk in head) {
           p[head[lk]] = lines[k][lk];
         }
         pointFeature.setProperties(p);
