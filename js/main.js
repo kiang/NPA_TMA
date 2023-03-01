@@ -258,6 +258,9 @@ $.get('data/' + currentYear + '/a1.csv', {}, function (c) {
   var head = {};
   for (k in lines) {
     if (k > 0) {
+      if(lines[k][33] != 1) {
+        continue;
+      }
       var longitude = parseFloat(lines[k][49]);
       if (!Number.isNaN(longitude)) {
         var pointFeature = new ol.Feature({
