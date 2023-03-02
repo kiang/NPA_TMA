@@ -14,6 +14,12 @@ for (var z = 0; z < 20; ++z) {
 
 var sidebarTitle = document.getElementById('sidebarTitle');
 var content = document.getElementById('sidebarContent');
+var lineHead = {};
+var currentFeature = false;
+var lastCunli = false;
+var lastFeature = false;
+var lastFeatureType = '';
+
 
 var appView = new ol.View({
   center: ol.proj.fromLonLat([120.221507, 23.000694]),
@@ -27,6 +33,15 @@ var vectorPoints = new ol.layer.Vector({
     })
   }),
   style: pointStyle
+});
+
+var a2Points = new ol.layer.Vector({
+  source: new ol.source.Vector({
+    format: new ol.format.GeoJSON({
+      featureProjection: appView.getProjection()
+    })
+  }),
+  style: a2Style
 });
 
 var cunli = new ol.layer.Vector({
@@ -58,7 +73,7 @@ var baseLayer = new ol.layer.Tile({
 });
 
 var map = new ol.Map({
-  layers: [baseLayer, cunli, vectorPoints],
+  layers: [baseLayer, cunli, vectorPoints, a2Points],
   target: 'map',
   view: appView
 });
@@ -74,16 +89,18 @@ map.on('singleclick', function (evt) {
       currentFeature = feature;
       if (lastFeature) {
         if (lastFeatureType === 'point') {
-          lastFeature.setStyle(pointStyle);
+          if (p['事故類別名稱'] === 'A1') {
+            lastFeature.setStyle(pointStyle);
+          } else {
+            currentFeature.setStyle(a2Style);
+          }
         } else {
           lastFeature.setStyle(cunliStyle);
         }
       }
       var message = '';
 
-      if (p.type) {
-        appView.setCenter(feature.getGeometry().getCoordinates());
-        appView.setZoom(15);
+      if (p['事故類別名稱']) {
         var lonLat = ol.proj.toLonLat(p.geometry.getCoordinates());
         message += '<table class="table table-dark">';
         message += '<tbody>';
@@ -100,11 +117,42 @@ map.on('singleclick', function (evt) {
         message += '<a href="https://bing.com/maps/default.aspx?rtp=~pos.' + lonLat[1] + '_' + lonLat[0] + '" target="_blank" class="btn btn-info btn-lg btn-block">Bing 導航</a>';
         message += '</div></td></tr>';
         message += '</tbody></table>';
-        sidebarTitle.innerHTML = p.type;
-        currentFeature.setStyle(pointStyle);
+        sidebarTitle.innerHTML = p['發生地點'];
+        if (p['事故類別名稱'] === 'A1') {
+          currentFeature.setStyle(pointStyle);
+        } else {
+          currentFeature.setStyle(a2Style);
+        }
+
         lastFeatureType = 'point';
       } else if (p.VILLCODE) {
+        lastCunli = currentFeature;
         if (cunliMeta[p.VILLCODE]) {
+          var cityCode = p.VILLCODE.substring(0, 5);
+          var a2Features = [];
+          $.get('data/cunli_a2/' + cityCode + '/' + p.VILLCODE + '.csv', {}, function (c) {
+            var lines = $.csv.toArrays(c);
+            for (k in lines) {
+              var longitude = parseFloat(lines[k][49]);
+              if (!Number.isNaN(longitude)) {
+                var pointFeature = new ol.Feature({
+                  geometry: new ol.geom.Point(
+                    ol.proj.fromLonLat([longitude, parseFloat(lines[k][50])])
+                  )
+                });
+                var a2Properties = {};
+                for (lk in lineHead) {
+                  a2Properties[lineHead[lk]] = lines[k][lk];
+                }
+                pointFeature.setProperties(a2Properties);
+                a2Features.push(pointFeature);
+              }
+            }
+          }).then(function () {
+            var vSource = a2Points.getSource();
+            vSource.clear();
+            vSource.addFeatures(a2Features);
+          });
           message += '<table class="table table-dark">';
           message += '<tbody>';
           message += '<tr><th scope="row">A1 數量</th><td>' + cunliMeta[p.VILLCODE].a1 + '</td></tr>';
@@ -127,7 +175,7 @@ map.on('singleclick', function (evt) {
 });
 
 function pointStyle(f) {
-  var p = f.getProperties(), color, stroke, radius, pointCount;
+  var p = f.getProperties(), color = '#ff0000', stroke, radius = 15, pointCount = 5;
   if (f === currentFeature) {
     stroke = new ol.style.Stroke({
       color: '#000',
@@ -139,18 +187,6 @@ function pointStyle(f) {
       color: '#fff',
       width: 2
     });
-    if (p.type === 'a1') {
-      radius = 15;
-    } else {
-      radius = 8;
-    }
-  }
-  if (p.type === 'a1') {
-    pointCount = 5;
-    color = '#ff0000';
-  } else {
-    pointCount = 3;
-    color = '#cccc00';
   }
 
   return new ol.style.Style({
@@ -165,11 +201,35 @@ function pointStyle(f) {
   })
 }
 
+function a2Style(f) {
+  var p = f.getProperties(), radius, strokeWidth = 1;
+  if (f === currentFeature) {
+    radius = 15;
+    strokeWidth = 3;
+  } else {
+    radius = 8;
+  }
+
+  return new ol.style.Style({
+    image: new ol.style.RegularShape({
+      radius: radius,
+      points: 3,
+      fill: new ol.style.Fill({
+        color: '#cccc00'
+      }),
+      stroke: new ol.style.Stroke({
+        color: '#f00',
+        width: strokeWidth
+      })
+    })
+  })
+}
+
 function cunliStyle(f) {
   var p = f.getProperties();
   var color = 'rgba(149,78,44,0.7)';
   var strokeWidth = 1;
-  if (f === currentFeature) {
+  if (f === lastCunli) {
     strokeWidth = 5;
     color = 'rgba(255,255,255,0)';
   } else if (cunliMeta[p.VILLCODE]) {
@@ -197,10 +257,6 @@ function cunliStyle(f) {
     })
   })
 }
-
-var currentFeature = false;
-var lastFeature = false;
-var lastFeatureType = '';
 
 var geolocation = new ol.Geolocation({
   projection: appView.getProjection()
@@ -264,7 +320,6 @@ vectorPoints.setZIndex(100);
 var currentYear = new Date().getFullYear();
 $.get('data/' + currentYear + '/a1.csv', {}, function (c) {
   var lines = $.csv.toArrays(c);
-  var head = {};
   for (k in lines) {
     if (k > 0) {
       if (lines[k][33] != 1) {
@@ -279,14 +334,14 @@ $.get('data/' + currentYear + '/a1.csv', {}, function (c) {
         });
         var p = {};
         p.type = 'a1';
-        for (lk in head) {
-          p[head[lk]] = lines[k][lk];
+        for (lk in lineHead) {
+          p[lineHead[lk]] = lines[k][lk];
         }
         pointFeature.setProperties(p);
         pointFeatures.push(pointFeature);
       }
     } else {
-      head = lines[k];
+      lineHead = lines[k];
     }
   }
 }).then(function () {
