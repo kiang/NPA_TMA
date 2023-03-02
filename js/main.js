@@ -171,8 +171,8 @@ function cunliStyle(f) {
   var strokeWidth = 1;
   if (f === currentFeature) {
     strokeWidth = 5;
-  }
-  if (cunliMeta[p.VILLCODE]) {
+    color = 'rgba(255,255,255,0)';
+  } else if (cunliMeta[p.VILLCODE]) {
     if (cunliMeta[p.VILLCODE].total > 50) {
       color = 'rgba(30,16,9,0.7)';
     } else if (cunliMeta[p.VILLCODE].total > 30) {
