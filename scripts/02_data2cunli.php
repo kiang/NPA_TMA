@@ -27,6 +27,13 @@ for ($i = 0; $i < $zip->numFiles; $i++) {
             }
 
             if (isset($row['villcode'])) {
+                $cunliPath = $basePath . '/data/cunli_a2/' . substr($row['villcode'], 0, 5);
+                if (!file_exists($cunliPath)) {
+                    mkdir($cunliPath, 0777, true);
+                }
+                $oFh = fopen($cunliPath . '/' . $row['villcode'] . '.csv', 'a+');
+                fputcsv($oFh, $data);
+                fclose($oFh);
                 if (!isset($cunli[$row['villcode']])) {
                     $cunli[$row['villcode']] = [
                         'a1' => 0,
