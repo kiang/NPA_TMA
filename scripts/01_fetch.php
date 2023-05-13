@@ -13,6 +13,10 @@ if (!file_exists($path)) {
     mkdir($path, 0777, true);
 }
 
+foreach (glob($path . '/*.csv') as $csvFile) {
+    unlink($csvFile);
+}
+
 $client = new Client();
 $client->request('GET', 'https://data.moi.gov.tw/MoiOD/System/DownloadFile.aspx?DATA=402E554F-10E7-42C9-BAAF-DF7C431E3F18');
 file_put_contents($path . '/a1.csv', $client->getResponse()->getContent());
@@ -30,7 +34,7 @@ if (false !== strpos($fileType, 'application/zip')) {
     if ($zip->open($path . '/a2.csv') === TRUE) {
         $zip->extractTo($path);
         $zip->close();
-        foreach($metaFiles AS $metaFile) {
+        foreach ($metaFiles as $metaFile) {
             if (file_exists($path . '/' . $metaFile)) {
                 unlink($path . '/' . $metaFile);
             }
