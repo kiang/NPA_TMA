@@ -19,9 +19,15 @@ foreach (glob($path . '/*.csv') as $csvFile) {
 
 $client = new Client();
 $client->request('GET', 'https://data.moi.gov.tw/MoiOD/System/DownloadFile.aspx?DATA=402E554F-10E7-42C9-BAAF-DF7C431E3F18');
-file_put_contents($path . '/a1.csv', $client->getResponse()->getContent());
+$c = $client->getResponse()->getContent();
+if (false === strpos($c, '</html>')) {
+    file_put_contents($path . '/a1.csv', $c);
+}
 $client->request('GET', 'https://data.moi.gov.tw/MoiOD/System/DownloadFile.aspx?DATA=99D093B4-2536-4891-9058-BE261D11F3AC');
-file_put_contents($path . '/a2.csv', $client->getResponse()->getContent());
+$c = $client->getResponse()->getContent();
+if (false === strpos($c, '</html>')) {
+    file_put_contents($path . '/a2.csv', $c);
+}
 
 $metaFiles = [
     'file.csv',
