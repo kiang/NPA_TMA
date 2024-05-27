@@ -18,15 +18,32 @@ foreach (glob($path . '/*.csv') as $csvFile) {
 }
 
 $client = new Client();
-$client->request('GET', 'https://data.moi.gov.tw/MoiOD/System/DownloadFile.aspx?DATA=402E554F-10E7-42C9-BAAF-DF7C431E3F18');
-$c = $client->getResponse()->getContent();
-if (false === strpos($c, '</html>')) {
-    file_put_contents($path . '/a1.csv', $c);
+
+$json = json_decode(file_get_contents('https://data.gov.tw/api/v2/rest/dataset/12818'), true);
+foreach ($json['result']['distribution'] as $item) {
+    if ($item['resourceFormat'] === 'CSV') {
+        $client->request('GET', $item['resourceDownloadUrl']);
+        $c = $client->getResponse()->getContent();
+        if (false === strpos($c, '</html>')) {
+            file_put_contents($path . '/a1.csv', $c);
+        }
+    }
 }
-$client->request('GET', 'https://data.moi.gov.tw/MoiOD/System/DownloadFile.aspx?DATA=99D093B4-2536-4891-9058-BE261D11F3AC');
-$c = $client->getResponse()->getContent();
-if (false === strpos($c, '</html>')) {
-    file_put_contents($path . '/a2.csv', $c);
+
+$json = json_decode(file_get_contents('https://data.gov.tw/api/v2/rest/dataset/13139'), true);
+$zip = new ZipArchive;
+$zipCounter = 0;
+foreach ($json['result']['distribution'] as $item) {
+    if ($item['resourceFormat'] === 'ZIP') {
+        ++$zipCounter;
+        $zipFile = $path . '/' . $zipCounter . '.zip';
+        $client->request('GET', $item['resourceDownloadUrl']);
+        file_put_contents($zipFile, $client->getResponse()->getContent());
+        $zip->open($zipFile);
+        $zip->extractTo($path);
+        $zip->close();
+        unlink($zipFile);
+    }
 }
 
 $metaFiles = [
@@ -34,17 +51,8 @@ $metaFiles = [
     'manifest.csv',
     'schema-file.csv',
 ];
-$fileType = finfo_file(finfo_open(FILEINFO_MIME), $path . '/a2.csv');
-if (false !== strpos($fileType, 'application/zip')) {
-    $zip = new ZipArchive;
-    if ($zip->open($path . '/a2.csv') === TRUE) {
-        $zip->extractTo($path);
-        $zip->close();
-        foreach ($metaFiles as $metaFile) {
-            if (file_exists($path . '/' . $metaFile)) {
-                unlink($path . '/' . $metaFile);
-            }
-        }
-        unlink($path . '/a2.csv');
+foreach ($metaFiles as $metaFile) {
+    if (file_exists($path . '/' . $metaFile)) {
+        unlink($path . '/' . $metaFile);
     }
 }
